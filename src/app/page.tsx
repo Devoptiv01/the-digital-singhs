@@ -1,11 +1,11 @@
-import BlogPostGrid from "@/componets/main/BlogPostGrid";
-import BusinessGrowth from "@/componets/main/BusinessGrowth";
-import CaseStudy from "@/componets/main/CaseStudy";
-import ContactSection from "@/componets/main/ContactSection";
-import OurServices from "@/componets/main/OurServices";
-import PortfolioGrid from "@/componets/main/PortfolioGrid";
-import Testimonials from "@/componets/main/Testimonials";
-import WhyChooseUs from "@/componets/main/WhyChooseUs";
+import BlogPostGrid from "@/components/main/BlogPostGrid";
+import BusinessGrowth from "@/components/main/BusinessGrowth";
+import CaseStudy from "@/components/main/CaseStudy";
+import ContactSection from "@/components/main/ContactSection";
+import OurServices from "@/components/main/OurServices";
+import PortfolioGrid from "@/components/main/PortfolioGrid";
+import Testimonials from "@/components/main/Testimonials";
+import WhyChooseUs from "@/components/main/WhyChooseUs";
 
 export default function Home() {
   return (<div className="">
