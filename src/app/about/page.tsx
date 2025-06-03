@@ -19,7 +19,7 @@ const Page = () => {
     <div>
       <AboutUsSection />
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 py-5 px-5">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 py-5 px-5 w-full max-w-[1800px] mx-auto">
         <StatCard end={10} label="Years Experience" />
         <StatCard end={50} label="Projects Completed" delay={100} />
         <StatCard end={25} label="Happy Clients" delay={200} />

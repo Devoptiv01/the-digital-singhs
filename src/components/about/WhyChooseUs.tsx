@@ -4,7 +4,7 @@ import React from "react";
 const WhyChooseUs = () => {
   return (
     <div className="bg-[#689a3d0a]">
-      <div className="min-h-screen h-fit ">
+      <div className="h-full max-h-[600px]">
         <div className="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16 lg:px-6">
           <div className="col-span-2 mb-8">
             {/* <p className="text-lg font-medium text-purple-500 dark:text-purple-500">Trusted Worldwide</p> */}

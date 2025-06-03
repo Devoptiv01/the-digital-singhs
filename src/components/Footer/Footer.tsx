@@ -13,7 +13,7 @@ export default function Footer() {
   }, [])
   
   return (
-    <footer className="bg-[#051605] text-white px-8 sm:px-20 py-10 md:py-16 text-sm">
+    <footer className="bg-[#051605] text-white px-4 sm:px-20 py-8 md:py-16 text-sm">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section */}
         <motion.div

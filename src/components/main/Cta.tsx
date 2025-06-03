@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import CallIcon from "@mui/icons-material/Call";
 import Link from "next/link";
 
 const Cta = ({title= "Have a query or need consultation? Contact us today!"}: {title?: string}) => {

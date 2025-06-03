@@ -20,7 +20,7 @@ const cards = [
 
 export default function BusinessGrowth() {
   return (
-    <section className="max-w-7xl mx-auto px-4 pt-5 pb-16 grid md:grid-cols-2 gap-12">
+    <section className="max-w-7xl w-full overflow-hidden mx-auto px-4 pt-5 pb-16 grid md:grid-cols-2 gap-12">
       {/* Left Content */}
       <div className="flex flex-col justify-center gap-5 md:gap-10 text-[#011627]">
         <div>

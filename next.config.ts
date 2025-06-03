@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**', // allows all paths
       },
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com', // replace with your remote image host
+        port: '',
+        pathname: '/**', // allows all paths
+      },
     ],
   },
 };
