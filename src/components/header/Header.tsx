@@ -19,7 +19,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-[110] flex justify-between items-center px-5 w-full h-16 bg-[#fff] font-medium">
+    <div className="sticky top-0 z-[110] flex justify-between items-center px-5 w-full h-16 bg-[#fff] font-medium max-w-[1800px] mx-auto">
       <div className="w-full hidden md:block">
         <div className="w-full flex justify-between items-center">
           {/* // first part of the header */}
@@ -41,17 +41,17 @@ const Header = () => {
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
                 </li>
                 <li className="w-full min-w-20 flex flex-col mt-1  items-center gap-1 text-black group duration-300 cursor-pointer">
-                  <Link href={"/packages"}>
-                  Packages
+                  <Link href={"/pricing"}>
+                  Pricing
                   </Link>
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
                 </li>
-                <li className="w-full min-w-[100px] flex flex-col items-center mt-1 group duration-300 cursor-pointer">
+                {/* <li className="w-full min-w-[100px] flex flex-col items-center mt-1 group duration-300 cursor-pointer">
                   <Link href={"/who-we-are"} className=" w-full min-w-[80px]">
                     Who WE Are
                   </Link>
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
-                </li>
+                </li> */}
                 <li className="w-full min-w-[100px] flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/our-portfolio"} className=" w-full min-w-[80px]">
                     Our Portfolio
@@ -59,13 +59,13 @@ const Header = () => {
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
                 </li>
                 <li className="w-full min-w-16 flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
-                  <Link href={"/about"}>
+                  <Link href={"/about-us"}>
                   About us
                   </Link>
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
                 </li>
-                <li className="min-w-[140px] lg:min-w-[167px] flex justify-center items-center gap-1 group duration-300 cursor-pointer bg-[#10410F] text-white rounded-full h-12 md:h-14">
-                  <Link href={"/contact-us"} className=" w-fit">
+                <li className="min-w-[140px] lg:min-w-[167px] hover:bg-light-green hover:text-dark-green hover:font-bold flex justify-center items-center gap-1 group duration-300 cursor-pointer bg-[#10410F] text-white rounded-full h-12 md:h-14">
+                  <Link href={"/contact-us"} className=" w-fit ">
                     Contact Us
                   </Link>
                 </li>
@@ -119,9 +119,9 @@ const Header = () => {
             >
               {[
                 { href: "/services", label: "services" },
-                { href: "/packages", label: "packages" },
-                { href: "/who-we-are", label: "who we are" },
-                { href: "/about", label: "about" },
+                { href: "/pricing", label: "Pricing" },
+                { href: "/our-portfolio", label: "Our Portfolio" },
+                { href: "/about-us", label: "about" },
                 { href: "/contact-us", label: "Contact Us" },
               ].map(({ href, label }) => (
                 <motion.li

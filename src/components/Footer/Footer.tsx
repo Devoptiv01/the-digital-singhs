@@ -21,18 +21,18 @@ export default function Footer() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl lg:text-[40px] font-semibold mb-2">Soziely</h2>
+          <h2 className="text-3xl lg:text-[40px] font-semibold mb-2">The Digital Singhs</h2>
           <p className="text-base mb-4">
             Unlock Your Business's Potential with <br />
             Our Social Media Solutions
           </p>
           <div className="flex flex-wrap gap-4 text-base">
-            <Link href="#">Overview</Link>
-            <Link href="#">Features</Link>
-            <Link href="#">Pricing</Link>
-            <Link href="#">Careers</Link>
-            <Link href="#">Help</Link>
-            <Link href="#">Privacy</Link>
+            <Link className='hover:text-light-green duration-300' href="/services">Services</Link>
+            <Link className='hover:text-light-green duration-300' href="/our-portfolio">Our Portfolio</Link>
+            <Link className='hover:text-light-green duration-300' href="/pricing">Pricing</Link>
+            <Link className='hover:text-light-green duration-300' href="/about-us">About us</Link>
+            <Link className='hover:text-light-green duration-300' href="/contact-us">Contact us</Link>
+            {/* <Link href="#">Privacy</Link> */}
           </div>
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
             Stay Up-to-Date with the Latest Social Media <br />
             Strategies and Insights
           </p>
-          <form className="flex gap-2 w-full max-w-md h-12 sm:h-16">
+          {/* <form className="flex gap-2 w-full max-w-md h-12 sm:h-16">
             <input
               type="email"
               placeholder="Email"
@@ -59,18 +59,18 @@ export default function Footer() {
             >
               Sign Up <ArrowUpRightIcon className='h-4'/>
             </button>
-          </form>
+          </form> */}
         </motion.div>
       </div>
 
       <motion.div
-        className="mt-10 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between  text-xs"
+        className="mt-10 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between  text-xs max-w-[1500px] mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}
       >
-        <span>© {currentYear} Soziely. All rights reserved.</span>
-        <span>Designed by TokoTema</span>
+        <span>© {currentYear} The Digital Singhs. All rights reserved.</span>
+        {/* <span>Designed by TokoTema</span> */}
       </motion.div>
     </footer>
   );

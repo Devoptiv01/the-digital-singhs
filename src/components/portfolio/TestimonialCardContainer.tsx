@@ -3,54 +3,54 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 
-
 const testimonials = [
   {
     name: "Kyrie Petrakis",
     review:
-      "Partnering with DevOptiv transformed our online presence. Their targeted SEO campaigns continue to bring in a steady stream of qualified leads every month. They're a cornerstone of our growth strategy.",
+      "Partnering with The Digital Singhs revolutionized our online presence. Their targeted SEO campaigns consistently bring a steady flow of qualified leads every month. They are a vital part of our growth strategy.",
   },
   {
     name: "Ravinder – Founder & CEO, SSI",
     review:
-      "We've worked with agencies across five countries, and DevOptiv has outperformed them all. Their deep SEO expertise and measurable results make them our go-to digital partner.",
+      "After working with agencies across five countries, The Digital Singhs have outperformed them all. Their deep digital marketing expertise and measurable results make them our trusted growth partner.",
   },
   {
     name: "Rimpi – Founder & CEO, Hearty Way",
     review:
-      "DevOptiv helped us scale from minimal traffic to over 70,000 monthly visitors – in just one month. Today, we’re generating half a million dollars in revenue thanks to their digital marketing expertise.",
+      "The Digital Singhs helped us scale from minimal traffic to over 70,000 monthly visitors within just one month. Today, thanks to their digital marketing strategies, we’re generating half a million dollars in revenue.",
   },
   {
     name: "Anupinder Rai – USA",
     review:
-      "As someone with no background in marketing or tech, I was impressed by DevOptiv’s approach. They handled everything — web development, SEO, and local targeting — and delivered exactly what they promised.",
+      "With no background in marketing or tech, I was amazed by The Digital Singhs’ comprehensive approach. They handled everything — web development, SEO, and local targeting — delivering exactly what they promised.",
   },
   {
     name: "MadanJot – Founder & CEO, Digital Singhs",
     review:
-      "I was running a local agency, but DevOptiv helped us expand into international markets. With their strategies, we're now serving clients in three different countries. Their vision truly sets them apart.",
+      "Running a local agency, The Digital Singhs helped us expand internationally. Their strategies now enable us to serve clients in three countries. Their vision and execution truly set them apart.",
   },
   {
     name: "Zaid Kuba",
     review:
-      "From branding and development to SEO and ad strategy — DevOptiv manages it all. Their integrated approach has positioned us as industry leaders. They’re not just marketers — they’re growth architects.",
+      "From branding and web development to SEO and ad strategy, The Digital Singhs manage it all. Their integrated approach positioned us as industry leaders. They’re not just marketers — they’re architects of growth.",
   },
   {
     name: "Jwanda – Founder & CEO, Khalsa Transportation",
     review:
-      "I never expected a traditional business like ours to thrive online. DevOptiv’s digital strategy completely changed the game. We've doubled our client base, and it's just the beginning.",
+      "I never imagined a traditional business like ours could thrive online. The Digital Singhs’ digital marketing strategy changed the game. We've doubled our client base, and this is just the beginning.",
   },
   {
     name: "Jasveer Singh – Journalist",
     review:
-      "DevOptiv optimized my YouTube presence and content visibility. I gained over 400K followers within 3 months and launched a second channel with their help. Their digital marketing truly works.",
+      "The Digital Singhs optimized my YouTube presence and content visibility. I gained over 400K followers in 3 months and launched a second channel with their help. Their marketing strategies truly deliver results.",
   },
   {
     name: "Parminder Singh – Founder & CEO, CyberNetShield",
     review:
-      "We provide cybersecurity services and needed high-quality inbound leads. DevOptiv’s SEO strategies deliver 2–3 strong leads daily. Their work is systematic, transparent, and result-oriented.",
+      "We provide cybersecurity services and needed high-quality inbound leads. The Digital Singhs’ SEO strategies deliver 2–3 strong leads daily. Their work is transparent, systematic, and focused on results.",
   },
 ];
+
 
 const TestimonialCardContainer = () => {
 //   const scrollRef = useRef<HTMLDivElement>(null);
@@ -94,7 +94,7 @@ const TestimonialCardContainer = () => {
             key={index}
             className="!w-[300px] !h-[250px] flex-shrink-0 bg-white rounded-lg shadow-md transition-transform"
           >
-            <div className="flex flex-col items-center gap-4 py-2 overflow-hidden">
+            <div className="flex flex-col items- center gap-4 py-2 overflow-hidden">
               {/* <div className="w-full h-[160px] mt-1">
                                 <img
                                     src="https://img.freepik.com/free-vector/sales-consulting-concept-illustration_114360-9025.jpg"
@@ -103,12 +103,12 @@ const TestimonialCardContainer = () => {
                                 />
                             </div> */}
               <div className="flex flex-col items-start gap-2 px-4">
-                <div className="flex items-start justify-between w-full">
+                <div className="flex gap-3 items-center  w-full">
                   <div className="overflow-hidden border rounded-full min-w-12 min-h-12 max-w-12 max-h-12">
                     <img
                       src="https://img.freepik.com/free-vector/sales-consulting-concept-illustration_114360-9025.jpg"
                       alt="client"
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full mt-2"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-600">

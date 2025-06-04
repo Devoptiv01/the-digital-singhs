@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const portfolioImages = [
   'https://static.toiimg.com/thumb/msid-121176663,width-400,resizemode-4/Garena-Free-Fire-Max-redeem-codes-May-15.jpg',
@@ -57,9 +58,9 @@ export default function PortfolioGrid() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <button className="bg-teal-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-teal-600 transition">
+        <Link href={'/our-portfolio'} className="bg-teal-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-teal-600 transition cursor-pointer">
           View more
-        </button>
+        </Link>
       </motion.div>
     </section>
   );

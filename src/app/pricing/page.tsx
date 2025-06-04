@@ -163,8 +163,8 @@ export default function ServicesSection() {
             ))}
           </ul>
         </div>
-        <div className="bg-gray-50 p-6 rounded-lg border group">
-          <h3 className="text-lg font-semibold mb-3">Best For</h3>
+        <div className="bg-gray-50 p-6 rounded-lg border group flex flex-col gap-2">
+          <h3 className="text-lg font-semibold">Best For</h3>
           <ul className="space-y-2">
             {current.bestFor.map((item, idx) => (
               <li key={idx} className="text-green-600 group-hover:text-dark-green duration-500 font-medium">
@@ -172,9 +172,9 @@ export default function ServicesSection() {
               </li>
             ))}
           </ul>
-          <button className="mt-6 bg-green-500 group-hover:scale-110 group-hover:bg-dark-green group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
+          <Link href={'/contact-us'} className=" bg-green-500 group-hover:scale-105 group-hover:bg-dark-green group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
             Get Custom Quote or Free Demo
-          </button>
+          </Link>
         </div>
       </div>})}
 

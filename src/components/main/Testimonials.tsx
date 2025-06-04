@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const testimonials = [
   {
@@ -52,9 +53,9 @@ export default function Testimonials() {
           <p className="mb-6 text-[#818181]">
             Hear from Our Satisfied Clients
           </p>
-          <button className="bg-[#A2D95E] hover:bg-green-400 text-base h-14 sm:h-[66px] w-[213px] cursor-pointer transition px-6 py-3 rounded-[20px] text-black font-medium flex items-center gap-2">
+          <Link href={'/our-portfolio'} className="bg-[#A2D95E] hover:bg-green-400 text-base h-14 sm:h-[66px] w-[213px] cursor-pointer transition px-6 py-3 rounded-[20px] text-black font-medium flex items-center gap-2">
             Discover more <ArrowUpRight  className='h-5 w-5'/>
-          </button>
+          </Link>
           </div>
 
           <div className="w-full bg-[#C7C7C7] h-[2px]"></div>

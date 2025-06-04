@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { StarIcon } from "lucide-react";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 type Client = {
   name: string;
@@ -82,6 +82,25 @@ export default function CaseStudy() {
       sliderRef.current.scrollBy({ left: scrollBy, behavior: "smooth" });
     }
   };
+
+    // Auto-scroll logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (sliderRef.current) {
+        sliderRef.current.scrollBy({ left: scrollBy, behavior: "smooth" });
+
+        const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+        const atEnd = scrollLeft + clientWidth >= scrollWidth;
+
+        if (atEnd) {
+          sliderRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        }
+      }
+    }, 2000); // auto-scroll every 2 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
+
   return (
     <section className="px-6 lg:px-16 py-4 sm:pt-16 bg-white flex justify-center w-full max-width ">
       {/* <div className="flex mx-auto w-full"> */}
@@ -111,7 +130,7 @@ export default function CaseStudy() {
               &gt;
             </button>
           </div>
-          <div  ref={sliderRef} className="w-full flex gap-6 overflow-x-auto no-scrollbar">
+          <div  ref={sliderRef} className="w-full flex gap-6 overflow-x-auto no-scrollbar scroll-smooth">
             {clients.map((client, index) => (
               <motion.div
                 key={index}
