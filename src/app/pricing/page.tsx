@@ -151,7 +151,7 @@ export default function ServicesSection() {
 
         <div className="w-full flex flex-col gap-5 pt-10">
       {servicesArray.map((current) => {
-        return <div id={current.id} className="scroll-mt-10 md:scroll-mt-[120px] grid md:grid-cols-2 gap-10 items-start">
+        return <div id={current.id} className="scroll-mt-[178px] md:scroll-mt-[120px] grid md:grid-cols-2 gap-10 items-start">
         <div>
           <h2 className="text-2xl font-bold mb-2">{current.title}</h2>
           <p className="text-gray-600 mb-4">{current.description}</p>

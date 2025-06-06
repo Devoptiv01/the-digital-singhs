@@ -53,6 +53,7 @@ const services = [
 export default function OurServices() {
   useEffect(() => {
     Aos.init({
+      once: true,
       duration: 1000,
     });
   }, []);

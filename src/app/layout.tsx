@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Manrope as ManropeFont } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 const Manrope = ManropeFont({
   subsets: ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <div className="bg-white text-black w-full h-full scroll-smooth">
         <Header/>
+        <ToastContainer/>
         {children}
         <Footer/>
         </div>

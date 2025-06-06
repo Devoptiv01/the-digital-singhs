@@ -4,6 +4,7 @@ import nodemailer from 'nodemailer';
 export const runtime = 'nodejs';
 
 export async function POST(req: Request) {
+  console.log('POST request received at /api/sendEmail');
   try {
     const data = await req.json();
     const { email, subject } = data;

@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import Heading from '../main/Heading';
 import PhoneInput from 'react-phone-input-2';
 import RefreshIcon from '@mui/icons-material/Refresh';
+import axios from 'axios';
 
 
 
@@ -84,15 +85,9 @@ const ContactUsForm = () => {
         // console.log('-------------', finalData)
     
     
-        const res = await fetch("/api/sendEmail", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(finalData),
-        });
+        const res = await axios.post("/api/sendEmail", finalData)
     
-        const data = await res.json();
+        const data = await res.data;
     
         if (res.status === 200) {
           setStatus("success"); // Set status to 'success'
@@ -107,9 +102,9 @@ const ContactUsForm = () => {
             message: "",
             services: [],
           });
-          toast.success((data?.message as string) || 'Email sent successfully')
+          toast.success('Email sent successfully')
           console.log(data)
-          router.push('/thanks')
+          // router.push('/')
         }
         if(res.status === 400) {
           console.log(data)
@@ -123,11 +118,11 @@ const ContactUsForm = () => {
   return (
     <div>
       {/* form and map */}
-      <div className="flex flex-col w-full h-full gap-4 px-8 py-4 lg:flex-row">
+      <div className="flex flex-col w-full h-full gap-4 px-4 md:px-8 py-4 lg:flex-row">
 
 
         {/* form */}
-        <section className="flex-[0.5] mx-auto">
+        <section className="w-full md:flex-[0.5] mx-auto">
           <div className="text-center">
             <div className="flex flex-col items-center">
 
@@ -256,7 +251,7 @@ const ContactUsForm = () => {
                 <textarea name="message" value={formData.message} onChange={handleChange} className="w-full p-2 border rounded-md outline-none" placeholder="Message"></textarea>
 
                 <button type="submit" className="bg-[#10410F] w-full md: text-white p-3 rounded-md h-12">
-                  {status === "submitting" ? <RefreshIcon className="rotate" /> : "Send"}
+                  {status === "submitting" ? <RefreshIcon className="animate-spin" /> : "Send"}
                 </button>
                 {status === "success" ? <p>Thank you for contacting us, we will reach back to you in a short time.</p> : ''}
               </form>
