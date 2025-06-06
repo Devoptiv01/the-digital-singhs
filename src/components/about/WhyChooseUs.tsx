@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
           <div className="col-span-2 space-y-6 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
-            <div className="bg-white p-5 rounded-2xl shadow-lg">
+            <div className="bg-white p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
                 src="/temp-images/image.png"
                 alt="icons"
@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
                 businesses.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-2xl shadow-lg">
+            <div className="bg-white p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
                 src="/temp-images/image.png"
                 alt="icons"
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                 up.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-2xl shadow-lg">
+            <div className="bg-white p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
                 src="/temp-images/image.png"
                 alt="icons"
@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
                 Performance marketing that turns scrolls into customers.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-2xl shadow-lg">
+            <div className="bg-white p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
                 src="/temp-images/image.png"
                 alt="icons"

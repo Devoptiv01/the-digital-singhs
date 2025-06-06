@@ -47,7 +47,7 @@ export default function PortfolioGrid() {
               alt={`Portfolio ${index + 1}`}
               width={400}
               height={250}
-              className="object-cover w-full h-auto"
+              className="object-cover w-full h-auto hover:scale-105 duration-500"
             />
           </motion.div>
         ))}
@@ -58,7 +58,7 @@ export default function PortfolioGrid() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Link href={'/our-portfolio'} className="bg-teal-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-teal-600 transition cursor-pointer">
+        <Link href={'/our-portfolio'} className="bg-teal-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-teal-600 duration-500 transition cursor-pointer">
           View more
         </Link>
       </motion.div>

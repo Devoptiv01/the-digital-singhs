@@ -5,49 +5,49 @@ import { Autoplay, FreeMode } from "swiper/modules";
 
 const testimonials = [
   {
-    name: "Kyrie Petrakis",
+    name: "John Doe",
     review:
-      "Partnering with The Digital Singhs revolutionized our online presence. Their targeted SEO campaigns consistently bring a steady flow of qualified leads every month. They are a vital part of our growth strategy.",
+      "This service exceeded my expectations. Everything was smooth and hassle-free.",
   },
   {
-    name: "Ravinder – Founder & CEO, SSI",
+    name: "Jane Smith",
     review:
-      "After working with agencies across five countries, The Digital Singhs have outperformed them all. Their deep digital marketing expertise and measurable results make them our trusted growth partner.",
+      "Great experience overall. I would definitely recommend it to my friends and family.",
   },
   {
-    name: "Rimpi – Founder & CEO, Hearty Way",
+    name: "Michael Johnson",
     review:
-      "The Digital Singhs helped us scale from minimal traffic to over 70,000 monthly visitors within just one month. Today, thanks to their digital marketing strategies, we’re generating half a million dollars in revenue.",
+      "The team was professional and attentive. Everything was delivered on time.",
   },
   {
-    name: "Anupinder Rai – USA",
+    name: "Emily Brown",
     review:
-      "With no background in marketing or tech, I was amazed by The Digital Singhs’ comprehensive approach. They handled everything — web development, SEO, and local targeting — delivering exactly what they promised.",
+      "I wasn’t sure what to expect, but I’m genuinely impressed by the results.",
   },
   {
-    name: "MadanJot – Founder & CEO, Digital Singhs",
+    name: "David Wilson",
     review:
-      "Running a local agency, The Digital Singhs helped us expand internationally. Their strategies now enable us to serve clients in three countries. Their vision and execution truly set them apart.",
+      "Simple, effective, and just what I needed. No unnecessary complications.",
   },
   {
-    name: "Zaid Kuba",
+    name: "Olivia Davis",
     review:
-      "From branding and web development to SEO and ad strategy, The Digital Singhs manage it all. Their integrated approach positioned us as industry leaders. They’re not just marketers — they’re architects of growth.",
+      "Customer support was responsive and helpful throughout the entire process.",
   },
   {
-    name: "Jwanda – Founder & CEO, Khalsa Transportation",
+    name: "Daniel Martinez",
     review:
-      "I never imagined a traditional business like ours could thrive online. The Digital Singhs’ digital marketing strategy changed the game. We've doubled our client base, and this is just the beginning.",
+      "Everything worked perfectly. No bugs, no issues. Just solid performance.",
   },
   {
-    name: "Jasveer Singh – Journalist",
+    name: "Sophia Anderson",
     review:
-      "The Digital Singhs optimized my YouTube presence and content visibility. I gained over 400K followers in 3 months and launched a second channel with their help. Their marketing strategies truly deliver results.",
+      "From start to finish, it was a pleasant experience. I’ll be coming back.",
   },
   {
-    name: "Parminder Singh – Founder & CEO, CyberNetShield",
+    name: "William Taylor",
     review:
-      "We provide cybersecurity services and needed high-quality inbound leads. The Digital Singhs’ SEO strategies deliver 2–3 strong leads daily. Their work is transparent, systematic, and focused on results.",
+      "Affordable and reliable. It’s rare to find something that does both well.",
   },
 ];
 
@@ -92,7 +92,7 @@ const TestimonialCardContainer = () => {
         {testimonials.map((review, index) => (
           <SwiperSlide
             key={index}
-            className="!w-[300px] !h-[250px] flex-shrink-0 bg-white rounded-lg shadow-md transition-transform"
+            className="!w-[300px] h-fit !max-h-[250px] flex-shrink-0 bg-white rounded-lg shadow-md transition-transform"
           >
             <div className="flex flex-col items- center gap-4 py-2 overflow-hidden">
               {/* <div className="w-full h-[160px] mt-1">

@@ -78,8 +78,10 @@ export default function OurServices() {
       <div className="w-full grid md:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-6">
         {services.map((service, index) => (
           <div
-            data-aos="fade-up"
-            className={`relative w-full  h-fit max-md:pb-6 md:h-[350px] px-6 md:px-[38px] rounded-[20px] shadow-sm ${service.color}  hover:shadow-lg flex flex-col sm:gap-5 gap-2   transition-transform  duration-500 ease-in-out transform hover:scale-[1.05] will-change-transform`}
+            data-aos="fade-up">
+          <div
+            // data-aos="fade-up"
+            className={`relative w-full  h-fit max-md:pb-6 md:h-[350px] px-6 md:px-[38px] rounded-[20px] shadow-sm ${service.color}  hover:shadow-lg flex flex-col sm:gap-5 gap-2   transition-transform  duration-500 ease-in-out transform hover:scale-[1.07] will-change-transform`}
           >
             <div className="absolute top-0 left-0 bg-black text-white text-xl font-bold h-12 md:h-16 sm:h-[73px] w-16 rounded-tl-[20px] rounded-br-[20px] flex items-center justify-center">
               {service.id}
@@ -90,7 +92,7 @@ export default function OurServices() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             // whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            transition={{ delay: index * 0.5, duration: 0.6, ease: "easeInOut" }}
+            transition={{ delay: index * 0.4, duration: 0.6, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="text-[28px] sm:text-[32px] md:leading-[42px] -tracking-normal font-bold text-gray-900 mt-16 md:mt-[87px]">
               {service.title}
@@ -100,7 +102,7 @@ export default function OurServices() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             // whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            transition={{ delay: index * 0.5, duration: 0.6, ease: "easeInOut" }}
+            transition={{ delay: index * 0.4, duration: 0.6, ease: "easeInOut" }}
             viewport={{ once: true }}
                className="text-base text-gray-600 sm:mb-4">
               {service.description}
@@ -111,6 +113,7 @@ export default function OurServices() {
             >
               Learn more...
             </Link>
+          </div>
           </div>
         ))}
       </div>

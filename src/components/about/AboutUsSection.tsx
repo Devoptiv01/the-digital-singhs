@@ -1,50 +1,99 @@
-"use client"
+"use client";
 
 import Aos from "aos";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
 const AboutUsSection = () => {
-    useEffect(() => {
-      Aos.init({ duration: 800 });
-    }, []);
-  
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   return (
     <>
       <section className="bg-gray-100">
+        {/* Our Mission */}
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div data-aos="fade-right" className="max-w-lg">
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                About Us
+            <div data-aos="fade-right" className="max-w-lg group">
+              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl duration-500 group-hover:text-dark-green">
+                Our Mission
               </h2>
-              <p className="mt-4 text-gray-600 text-lg">
-                The Digital Singhs & Corps is a proudly Canadian social media
-                marketing startup headquartered in Kitchener, Ontario. Built for
-                the digital age, we empower startups, small businesses, and
-                growing brands to thrive online through bold storytelling and
-                data-driven strategy. <br/> <br/> We specialize in crafting impactful
-                digital experiences that turn casual scrolls into loyal
-                customers. Whether you're just starting out or looking to
-                elevate your brand, we provide tailored solutions that connect,
-                engage, and convert.
+              <p className="mt-4 text-gray-600 text-lg group-hover:text-black duration-500">
+                At The Digital Singhs & Corps, our mission is to empower
+                startups, small businesses, and emerging brands with
+                cutting-edge digital marketing strategies. We aim to tell
+                stories that resonate, build communities that last, and convert
+                audiences into loyal customers — all through the power of
+                creativity and data.
               </p>
-              <div className="mt-8">
+              <div className="mt-8 animate-bounce ease-in-out ">
                 <Link
                   href="/contact-us"
-                  className="text-dark-green font-medium"
+                  className="text-dark-green font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-green hover:text-white"
                 >
                   Contact us
-                  <span className="ml-2">&#8594;</span>
+                  <span className="ml-2 ">&#8594;</span>
                 </Link>
               </div>
             </div>
-            <div data-aos="fade-left" className="mt-12 md:mt-0">
-              <img
-                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
-                alt="About Us Image"
-                className="object-cover rounded-lg shadow-md"
+            <div data-aos="fade-left" className="mt-8 md:mt-0">
+              <video
+                // controls
+                playsInline
+                muted
+                onMouseEnter={(e) => {
+                  e.currentTarget.play();
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.pause();
+                  e.currentTarget.currentTime = 0;
+                }}
+                className="w-full rounded-lg shadow-md"
+                src="/videos/video-center.mp4"
               />
+            </div>
+          </div>
+        </div>
+
+        {/* Our Mission */}
+        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div data-aos="fade-left" className="mt-8 md:mt-0">
+              <video
+                // controls
+                playsInline
+                muted
+                onMouseEnter={(e) => {
+                  e.currentTarget.play();
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.pause();
+                  e.currentTarget.currentTime = 0;
+                }}
+                className="w-full rounded-lg shadow-md"
+                src="/videos/video-center.mp4"
+              />
+            </div>
+            <div data-aos="fade-right" className="max-w-lg group">
+              <h2 className="text-3xl font-extrabold text-gray-900 duration-500 group-hover:text-dark-green sm:text-4xl">
+                Our Vision
+              </h2>
+              <p className="mt-4 text-gray-600 text-lg group-hover:text-black duration-500">
+                We envision a world where businesses of all sizes can compete on
+                equal footing in the digital landscape. Our goal is to be the
+                catalyst that helps them achieve visibility, growth, and
+                meaningful engagement in a constantly evolving market.
+              </p>
+              <div className="mt-8 animate-bounce ease-in-out">
+                <Link
+                  href="/contact-us"
+                  className="text-dark-green font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-green hover:text-white"
+                >
+                  Contact us
+                  <span className="ml-2 ">&#8594;</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

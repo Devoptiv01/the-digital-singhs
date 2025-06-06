@@ -43,7 +43,7 @@ const SocialMediaShowcase = () => {
   }, []);
 
   return (
-    <section className="relative py-12 px-6 max-w-7xl mx-auto z-10 overflow-hidden">
+    <section className="relative py-12 px-6 text-black mx-auto z-10 overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -57,7 +57,7 @@ const SocialMediaShowcase = () => {
       </video>
 
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      <div className="absolute inset-0 bg-white/70 z-0"></div>
 
       {/* Foreground Content */}
       <div className="relative z-10">
@@ -65,17 +65,19 @@ const SocialMediaShowcase = () => {
           <p className="text-sm text-green-500 uppercase font-medium tracking-wider">
             Social Media Marketing Agency
           </p>
-          <h2 className="text-3xl lg:text-5xl font-bold mt-2 text-white">
+          <h2 className="text-3xl lg:text-5xl font-bold mt-2 text-black">
             Boost Your Social Media Presence with Our Expert Agency Services
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-300">
+          <p className="mt-4 max-w-2xl mx-auto text-gray-800">
             Based in Canada, The Digital Singhs & Corps is a social media
             marketing startup helping brands grow online through strategy,
             content, and community engagement.
           </p>
           <button
+            data-aos="zoom-in"
+            data-aos-delay='1000'
             onClick={() => router.push("/services")}
-            className="mt-6 px-6 py-3 rounded-md bg-green-600 hover:bg-green-700 text-white transition duration-300"
+            className="mt-6 px-6 py-3 rounded-md bg-green-600 hover:bg-green-700 text-black transition duration-300"
           >
             Discover more ↗
           </button>
@@ -84,7 +86,8 @@ const SocialMediaShowcase = () => {
         <div className="flex  max-md:flex-col justify-evenly gap-6 mb-12">
           {/* Left Video Card */}
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
+            data-aos-delay='1000'
             className="w-full max-w-[290px] h-[334px] max-h-[334px] aspect-video overflow-hidden rounded-xl bg-transparent shadow-md"
           >
             <video
@@ -105,7 +108,8 @@ const SocialMediaShowcase = () => {
 
           {/* Center Video Card */}
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
+            data-aos-delay='1000'
             className="w-full max-w-[510px] h-[334px] max-h-[334px] aspect-video overflow-hidden rounded-xl bg-transparent shadow-md"
           >
             <video
@@ -126,7 +130,8 @@ const SocialMediaShowcase = () => {
 
           {/* Right Video Card */}
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
+            data-aos-delay='1000'
             className="w-full max-w-[290px] h-[334px] max-h-[334px] aspect-video overflow-hidden rounded-xl bg-transparent shadow-md"
           >
             <video
@@ -148,7 +153,7 @@ const SocialMediaShowcase = () => {
 
         {/* Stats */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-white"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-black"
           data-aos="fade-up"
         >
           <div>
