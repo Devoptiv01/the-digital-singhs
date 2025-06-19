@@ -43,9 +43,9 @@ const SocialMediaShowcase = () => {
   }, []);
 
   return (
-    <section className="relative py-12 px-6 text-black mx-auto z-10 overflow-hidden">
+    <section className="relative py-12 px-6 text-white mx-auto z-10 overflow-hidden">
       {/* Background Video */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -54,21 +54,21 @@ const SocialMediaShowcase = () => {
       >
         <source src="/videos/video-01.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-white/70 z-0"></div>
+      {/* <div className="absolute inset-0 bg-white/70 z-0"></div> */}
 
       {/* Foreground Content */}
       <div className="relative z-10">
         <div className="text-center mb-10" data-aos="fade-up">
-          <p className="text-sm text-green-500 uppercase font-medium tracking-wider">
+          <p className="text-sm text-orange-500 uppercase font-medium tracking-wider">
             Social Media Marketing Agency
           </p>
-          <h2 className="text-3xl lg:text-5xl font-bold mt-2 text-black">
+          <h2 className="text-3xl lg:text-5xl font-bold mt-2 text-white">
             Boost Your Social Media Presence with Our Expert Agency Services
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-800">
+          <p className="mt-4 max-w-2xl mx-auto text-white">
             Based in Canada, The Digital Singhs & Corps is a social media
             marketing startup helping brands grow online through strategy,
             content, and community engagement.
@@ -77,7 +77,7 @@ const SocialMediaShowcase = () => {
             data-aos="zoom-in"
             data-aos-delay='1000'
             onClick={() => router.push("/services")}
-            className="mt-6 px-6 py-3 rounded-md bg-green-600 hover:bg-green-700 text-black transition duration-300"
+            className="mt-6 px-6 py-3 rounded-md bg-orange-600 hover:bg-orange-700 text-white transition duration-300"
           >
             Discover more ↗
           </button>
@@ -153,7 +153,7 @@ const SocialMediaShowcase = () => {
 
         {/* Stats */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-black"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-white"
           data-aos="fade-up"
         >
           <div>

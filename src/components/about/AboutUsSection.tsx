@@ -16,7 +16,7 @@ const AboutUsSection = () => {
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div data-aos="fade-right" className="max-w-lg group">
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl duration-500 group-hover:text-dark-green">
+              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl duration-500 group-hover:text-dark-orange">
                 Our Mission
               </h2>
               <p className="mt-4 text-gray-600 text-lg group-hover:text-black duration-500">
@@ -30,7 +30,7 @@ const AboutUsSection = () => {
               <div className="mt-8 animate-bounce ease-in-out ">
                 <Link
                   href="/contact-us"
-                  className="text-dark-green font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-green hover:text-white"
+                  className="text-dark-orange font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-orange hover:text-white"
                 >
                   Contact us
                   <span className="ml-2 ">&#8594;</span>
@@ -76,7 +76,7 @@ const AboutUsSection = () => {
               />
             </div>
             <div data-aos="fade-right" className="max-w-lg group">
-              <h2 className="text-3xl font-extrabold text-gray-900 duration-500 group-hover:text-dark-green sm:text-4xl">
+              <h2 className="text-3xl font-extrabold text-gray-900 duration-500 group-hover:text-dark-orange sm:text-4xl">
                 Our Vision
               </h2>
               <p className="mt-4 text-gray-600 text-lg group-hover:text-black duration-500">
@@ -88,7 +88,7 @@ const AboutUsSection = () => {
               <div className="mt-8 animate-bounce ease-in-out">
                 <Link
                   href="/contact-us"
-                  className="text-dark-green font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-green hover:text-white"
+                  className="text-dark-orange font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-orange hover:text-white"
                 >
                   Contact us
                   <span className="ml-2 ">&#8594;</span>

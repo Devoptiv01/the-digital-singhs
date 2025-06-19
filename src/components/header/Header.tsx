@@ -19,7 +19,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-[110] flex justify-between items-center px-5 w-full h-16 bg-[#fff] font-medium max-w-[1800px] mx-auto">
+    <div className="sticky top-0 z-[110] flex justify-between items-center px-5 w-full h-16 bg-black text-white font-medium max-w-[1800px] mx-auto">
       <div className="w-full hidden md:block">
         <div className="w-full flex justify-between items-center">
           {/* // first part of the header */}
@@ -33,38 +33,38 @@ const Header = () => {
               />
             </Link>
             <div className="w-fit">
-              <ul className="flex gap-3 lg:gap-4  items-center w-full text-black ">
-                <li className="w-full min-w-20 flex flex-col mt-1 items-center gap-1 text-black group duration-300 cursor-pointer">
+              <ul className="flex gap-3 lg:gap-4  items-center w-full  ">
+                <li className="w-full min-w-20 flex flex-col mt-1 items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/services"}>
                   Services
                   </Link>
-                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
+                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
                 </li>
-                <li className="w-full min-w-20 flex flex-col mt-1  items-center gap-1 text-black group duration-300 cursor-pointer">
+                <li className="w-full min-w-20 flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/pricing"}>
                   Pricing
                   </Link>
-                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
+                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
                 </li>
                 {/* <li className="w-full min-w-[100px] flex flex-col items-center mt-1 group duration-300 cursor-pointer">
                   <Link href={"/who-we-are"} className=" w-full min-w-[80px]">
                     Who WE Are
                   </Link>
-                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
+                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
                 </li> */}
                 <li className="w-full min-w-[100px] flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/our-portfolio"} className=" w-full min-w-[80px]">
                     Our Portfolio
                   </Link>
-                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
+                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
                 </li>
                 <li className="w-full min-w-16 flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/about-us"}>
                   About us
                   </Link>
-                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-[#10410F]"></div>
+                  <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
                 </li>
-                <li className="min-w-[140px] lg:min-w-[167px] hover:bg-light-green hover:text-dark-green hover:font-bold flex justify-center items-center gap-1 group duration-300 cursor-pointer bg-[#10410F] text-white rounded-full h-12 md:h-14">
+                <li className="min-w-[140px] lg:min-w-[167px] hover:bg-light-orange hover:font-bold flex justify-center items-center gap-1 group duration-300 cursor-pointer bg-dark-orange text-white rounded-full h-12 md:h-14">
                   <Link href={"/contact-us"} className=" w-fit ">
                     Contact Us
                   </Link>
@@ -134,7 +134,7 @@ const Header = () => {
                   className="w-full min-w-24 flex flex-col gap-1 group duration-300 cursor-pointer"
                 >
                   <Link href={href} className="capitalize">{label}</Link>
-                  <div className="w-0 duration-300 rounded-lg h-[2px] bg-[#10410F] group-hover:w-full"></div>
+                  <div className="w-0 duration-300 rounded-lg h-[2px] bg-dark-orange group-hover:w-full"></div>
                 </motion.li>
               ))}
             </motion.ul>

@@ -32,14 +32,14 @@ const PortfolioCard = ({
           <div className="overflow-hidden rounded-[10px] group">
             <img src={ImageHref} alt="portfolio" className="w-full group-hover:scale-105 duration-500" />
           </div>
-          <div className="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-[34px] px-3 text-center shadow-portfolio hover:border border border-white duration-500 hover:border-dark-green box-border">
+          <div className="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-[34px] px-3 text-center shadow-portfolio hover:border border border-white duration-500 hover:border-dark-orange box-border">
             <span className="text-primary mb-2 block text-sm font-medium">
               {category}
             </span>
             <h3 className="text-dark mb-5 text-xl font-bold">{title}</h3>
             <Link
               href={buttonHref}
-              className="text-body-color hover:border-dark-green hover:bg-dark-green inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition  hover:text-white duration-500"
+              className="text-body-color hover:border-dark-orange hover:bg-dark-orange inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition  hover:text-white duration-500"
             >
               {button}
             </Link>

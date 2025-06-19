@@ -21,12 +21,12 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full bg-[#f6fbea] py-12 px-6">
+    <section className="w-full bg-black text-white py-12 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left graphic */}
         <div className="relative">
-          <div className="bg-[#A2D95E] pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
-            <div className="bg-[#10410F] w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
+          <div className="bg-orange-400 pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
+            <div className="bg-orange-500 w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
               <div className="absolute top-1/2 -translate-y-1/2 ">
                 <img src="/icons/laughing.svg" alt="image" className='' />
               </div>
@@ -46,8 +46,8 @@ export default function WhyChooseUs() {
         {/* Text content */}
         <div className="space-y-6 max-md: mt-5">
         <div className="space-y-4">
-            <p className="uppercase text-sm tracking-wider text-[#10410F]">Why Choose Us</p>
-            <h2 className="md:text-[46px] sm:text-4xl text-3xl font-bold text-black sm:leading-[48px] md:leading-[68px]">
+            <p className="uppercase text-sm tracking-wider text-orange-500">Why Choose Us</p>
+            <h2 className="md:text-[46px] sm:text-4xl text-3xl font-bold text-orange-400 sm:leading-[48px] md:leading-[68px]">
                 The Benefits of Partnering <br /> with Soziely
             </h2>
           </div>
@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
                   <img src={item.icon} alt="image" className='min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[70px] md:min-h-[100px] absolute z-10' />
                 </div>
                 <div className='flex flex-col justify-between h-full'>
-                  <p className="font-semibold text-xl md:text-2xl text-[#10410F]">{item.title}</p>
+                  <p className="font-semibold text-xl md:text-2xl text-orange-500">{item.title}</p>
                   <p className="text-sm md:text-base">{item.desc}</p>
                 </div>
               </div>

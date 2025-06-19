@@ -18,7 +18,7 @@ const ServiceCard = ({ icon, title, description, features, image, reverse }: any
       viewport={{ once: true }}
     >
       <div className="lg:w-1/2 space-y-4">
-        <div className="flex items-center gap-3 text-black group-hover:text-dark-green dark:text-white">
+        <div className="flex items-center gap-3 text-black group-hover:text-dark-orange dark:text-white">
           {/* <div className="bg-black dark:bg-white text-white dark:text-black p-3 rounded-full">{icon}</div> */}
           <h3 className="text-2xl font-bold">{title}</h3>
         </div>
@@ -28,7 +28,7 @@ const ServiceCard = ({ icon, title, description, features, image, reverse }: any
             <li key={idx}>{item}</li>
           ))}
         </ul>
-        <Link href={'/contact-us'} className='flex gap-2  bg-light-green w-fit py-2 px-4 rounded-xl hover:bg-dark-green hover:text-white duration-500 font-medium hover:scale-105'>
+        <Link href={'/contact-us'} className='flex gap-2  bg-light-orange w-fit py-2 px-4 rounded-xl hover:bg-dark-orange hover:text-white duration-500 font-medium hover:scale-105'>
           Contact us
           <ArrowRight/>
         </Link>

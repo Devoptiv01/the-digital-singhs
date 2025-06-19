@@ -36,7 +36,7 @@ const StatCard: React.FC<StatCardProps> = ({ end, label, delay = 500, suffix = '
       data-aos="fade-up"
       data-aos-delay={delay}
     >
-      <h4 className="mb-2 text-3xl font-bold text-light-green">
+      <h4 className="mb-2 text-3xl font-bold text-light-orange">
         {hasViewed ? <CountUp end={end} duration={2} suffix={suffix} /> : `0${suffix}`}
       </h4>
       <p className="text-gray-400">{label}</p>

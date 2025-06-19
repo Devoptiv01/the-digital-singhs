@@ -13,7 +13,7 @@ export default function Footer() {
   }, [])
   
   return (
-    <footer className="bg-[#051605] text-white px-4 sm:px-20 py-8 md:py-16 text-sm">
+    <footer className="bg-orange-500 text-white px-4 sm:px-20 py-8 md:py-16 text-sm">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section */}
         <motion.div
@@ -27,11 +27,11 @@ export default function Footer() {
             Our Social Media Solutions
           </p>
           <div className="flex flex-wrap gap-4 text-base">
-            <Link className='hover:text-light-green duration-300' href="/services">Services</Link>
-            <Link className='hover:text-light-green duration-300' href="/our-portfolio">Our Portfolio</Link>
-            <Link className='hover:text-light-green duration-300' href="/pricing">Pricing</Link>
-            <Link className='hover:text-light-green duration-300' href="/about-us">About us</Link>
-            <Link className='hover:text-light-green duration-300' href="/contact-us">Contact us</Link>
+            <Link className='hover:text-light-orange duration-300' href="/services">Services</Link>
+            <Link className='hover:text-light-orange duration-300' href="/our-portfolio">Our Portfolio</Link>
+            <Link className='hover:text-light-orange duration-300' href="/pricing">Pricing</Link>
+            <Link className='hover:text-light-orange duration-300' href="/about-us">About us</Link>
+            <Link className='hover:text-light-orange duration-300' href="/contact-us">Contact us</Link>
             {/* <Link href="#">Privacy</Link> */}
           </div>
         </motion.div>

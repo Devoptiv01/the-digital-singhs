@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${Manrope.className} bg-white`}
       >
-        <div className="bg-white text-black w-full h-full scroll-smooth">
+        <div className="bg-black w-full h-full scroll-smooth">
         <Header/>
         <ToastContainer/>
         {children}

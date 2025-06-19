@@ -15,7 +15,7 @@ const portfolioImages = [
 
 export default function PortfolioGrid() {
   return (
-    <section className="py-16 pt-8 px-4 text-center bg-white">
+    <section className="py-16 pt-8 px-4 text-center bg-black text-white">
       <motion.h2
         className="text-3xl font-bold mb-10"
         initial={{ opacity: 0, y: -30 }}
@@ -58,7 +58,7 @@ export default function PortfolioGrid() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Link href={'/our-portfolio'} className="bg-teal-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-teal-600 duration-500 transition cursor-pointer">
+        <Link href={'/our-portfolio'} className="bg-orange-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 duration-500 transition cursor-pointer">
           View more
         </Link>
       </motion.div>

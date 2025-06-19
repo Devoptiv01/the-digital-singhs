@@ -102,18 +102,18 @@ export default function CaseStudy() {
   }, []);
 
   return (
-    <section className="px-6 lg:px-16 py-4 sm:pt-16 bg-white flex justify-center w-full max-width ">
+    <section className="px-6 lg:px-16 py-4 sm:pt-16 bg-black text-white flex justify-center w-full max-width ">
       {/* <div className="flex mx-auto w-full"> */}
       <div className="flex justify-center max-sm:flex-wrap mx-auto  max-w-fit gap-5 overflow-x-hidden no-scrollbar">
 
         <div className="sm:max-w-1/4 w-full space-y-3 sm:space-y-7">
-          <p className="text-[#005015] font-medium text-xl sm:text-[26px]">CASE STUDY</p>
-          <h2 className="text-4xl md:text-[45px] font-bold mt-2 mb-4 text-[#011627]">
+          <p className="text-orange-500 font-medium text-xl sm:text-[26px]">CASE STUDY</p>
+          <h2 className="text-4xl md:text-[45px] font-bold mt-2 mb-4 text-orange-400">
             OUR CLIENT
             <br />
             GETS RESULTS
           </h2>
-          <p className="text-gray-600 sm:mb-8 max-w-[368px]">
+          <p className="text-white sm:mb-8 max-w-[368px]">
             PageTraffic offers top-notch SEO and digital marketing solutions.
           </p>
         </div>
@@ -122,11 +122,11 @@ export default function CaseStudy() {
           {/* Navigation buttons */}
           <div className="flex  justify-end mt-3 space-x-2">
             <button onClick={handleScrollLeft}
-            className="w-8 h-8 rounded bg-green-100 text-green-700 hover:bg-green-200 transition">
+            className="w-8 h-8 rounded bg-orange-100 text-orange-700 hover:bg-orange-200 transition">
               &lt;
             </button>
             <button onClick={handleScrollRight}
-            className="w-8 h-8 rounded bg-green-700 text-white hover:bg-green-800 transition">
+            className="w-8 h-8 rounded bg-orange-700 text-white hover:bg-orange-800 transition">
               &gt;
             </button>
           </div>

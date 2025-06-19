@@ -142,7 +142,7 @@ export default function ServicesSection() {
             href={`#${service.id}`}
             key={service.id}
             // onClick={() => setSelected(service.label as keyof typeof services)}
-            className={`px-4 py-2 border rounded-md font-medium hover:bg-dark-green hover:text-white duration-500 hover:scale-105  `}
+            className={`px-4 py-2 border rounded-md font-medium hover:bg-dark-orange hover:text-white duration-500 hover:scale-105  `}
           >
             {service.label}
           </Link>
@@ -167,12 +167,12 @@ export default function ServicesSection() {
           <h3 className="text-lg font-semibold">Best For</h3>
           <ul className="space-y-2">
             {current.bestFor.map((item, idx) => (
-              <li key={idx} className="text-green-600 group-hover:text-dark-green duration-500 font-medium">
+              <li key={idx} className="text-green-600 group-hover:text-dark-orange duration-500 font-medium">
                 ✓ {item}
               </li>
             ))}
           </ul>
-          <Link href={'/contact-us'} className=" bg-green-500 group-hover:scale-105 group-hover:bg-dark-green group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
+          <Link href={'/contact-us'} className=" bg-green-500 group-hover:scale-105 group-hover:bg-dark-orange group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
             Get Custom Quote or Free Demo
           </Link>
         </div>

@@ -35,7 +35,7 @@ const partners = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#0b1f14] text-white py-10 sm:py-16 px-6 md:px-20 ">
+    <section className="bg-black text-white py-10 sm:py-16 px-6 md:px-20 ">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10 max-width">
         {/* Left Section */}
         <motion.div
@@ -46,14 +46,14 @@ export default function Testimonials() {
           className="w-full lg:w-1/3 space-y-7 md:space-y-10"
         >
           <div className="pb-5sm:pb-10">
-          <h4 className="text-green-300 uppercase tracking-widest text-sm mb-3">Testimonials</h4>
+          <h4 className="text-orange-500 uppercase tracking-widest text-sm mb-3">Testimonials</h4>
           <h2 className="text-3xl md:text-5xl font-semibold mb-4 lg:leading-[68px]">
             Don’t just take<br/> our word for it:
           </h2>
           <p className="mb-6 text-[#818181]">
             Hear from Our Satisfied Clients
           </p>
-          <Link href={'/our-portfolio'} className="bg-[#A2D95E] hover:bg-green-400 text-base h-14 sm:h-[66px] w-[213px] cursor-pointer transition px-6 py-3 rounded-[20px] text-black font-medium flex items-center gap-2">
+          <Link href={'/our-portfolio'} className="bg-orange-500 hover:bg-orange-400 text-base h-14 sm:h-[66px] w-[213px] cursor-pointer transition px-6 py-3 rounded-[20px] text-black font-medium flex items-center gap-2">
             Discover more <ArrowUpRight  className='h-5 w-5'/>
           </Link>
           </div>
@@ -64,7 +64,7 @@ export default function Testimonials() {
             <h5 className="text-[#9498FF] mb-4 text-[20px]">Our Partners :</h5>
             <div className="grid grid-cols-2 min-[500px]:grid-cols-4 lg:grid-cols-2  gap-4">
               {partners.map((logo, index) => (
-                <div key={index} className='bg-white p-2 h-16 rounded-lg shadow w-full flex items-center gap-2 text-black'>
+                <div key={index} className='bg-gradient-to-r from-slate-900 to-slate-700 p-2 h-16 rounded-lg shadow w-full flex items-center gap-2 text-white'>
                 <img
                   src='/temp-images/image.png'
                   // src={logo}
@@ -87,7 +87,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white text-black p-6 rounded-xl flex max-sm:flex-col items-start gap-4 shadow-md"
+              className="bg-gradient-to-r from-slate-900 to-slate-700 text-white p-6 rounded-xl flex max-sm:flex-col items-start gap-4 shadow-md"
             >
               <div className="relative w-[174px] h-[174px]">
                 <Image
@@ -100,8 +100,8 @@ export default function Testimonials() {
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-1">
                   <div className='flex flex-col gap-2'>
-                    <h4 className="font-bold text-[#10410F] text-lg md:text-2xl">{t.name}</h4>
-                    <p className="text-sm text-[#10410F]  font-medium">{t.title}</p>
+                    <h4 className="font-bold text-orange-500 text-lg md:text-2xl">{t.name}</h4>
+                    <p className="text-sm text-orange-500  font-medium">{t.title}</p>
                   </div>
                   <div className="relative w-14 h-14">
                   <Image
@@ -113,7 +113,7 @@ export default function Testimonials() {
                     />
                   </div>
                 </div>
-                <p className="text-sm md:text-base text-[#818181] leading-[26px] pt-4">{t.text}</p>
+                <p className="text-sm md:text-base text-gray-200 leading-[26px] pt-4">{t.text}</p>
               </div>
             </motion.div>
           ))}

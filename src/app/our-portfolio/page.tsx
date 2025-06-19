@@ -46,7 +46,7 @@ const handleProject: HandleProjectFn = (category) => {
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "all"
                         ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color hover:bg-dark-green  hover:text-dark-green"
+                        : "inactiveClasses text-body-color hover:bg-dark-orange  hover:text-dark-orange"
                     }`}
                   >
                     All Projects
@@ -58,7 +58,7 @@ const handleProject: HandleProjectFn = (category) => {
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "branding"
                         ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-green"
+                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-orange"
                     }`}
                   >
                     Branding
@@ -70,7 +70,7 @@ const handleProject: HandleProjectFn = (category) => {
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "design"
                         ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-green"
+                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-orange"
                     }`}
                   >
                     Design
@@ -82,7 +82,7 @@ const handleProject: HandleProjectFn = (category) => {
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "marketing"
                         ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-green"
+                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-orange"
                     }`}
                   >
                     Marketing
@@ -94,7 +94,7 @@ const handleProject: HandleProjectFn = (category) => {
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "development"
                         ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-green"
+                        : "inactiveClasses text-body-color hover:bg-primary  hover:text-dark-orange"
                     }`}
                   >
                     Development

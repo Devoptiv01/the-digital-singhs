@@ -44,9 +44,9 @@ const cards = [
 
 export default function BusinessGrowth() {
   return (
-    <section className="max-w-7xl w-full overflow-hidden mx-auto px-4 pt-5 pb-16 grid md:grid-cols-2 gap-12">
+    <section className="max-w-7xl w-full overflow-hidden mx-auto px-4 pt-5 pb-16 grid md:grid-cols-2 gap-12 text-white">
       {/* Left Content */}
-      <div className="flex flex-col justify-center gap-5 md:gap-10 text-[#011627]">
+      <div className="flex flex-col justify-center gap-5 md:gap-10 ">
         <div>
           <h3 className="text-3xl font-semibold uppercase leading-[40px] tracking-[0.02em]">
             How PageTraffic Creates <br />
@@ -58,7 +58,7 @@ export default function BusinessGrowth() {
           help you rank high on search results, connect with.
         </p>
 
-        <ul className="space-y-3 sm:space-y-5 text-lg sm:leading-[30px] tracking-[0.02em]">
+        <ul className="space-y-3 sm:space-y-5 text-lg sm:leading-[30px] tracking-[0.02em] ">
           {features.map((feature, idx) => (
             <li key={idx} className="flex w-full items-center gap-2">
               <div className="h-5 w-5">
@@ -75,18 +75,18 @@ export default function BusinessGrowth() {
             <p className="text-lg">Total Audience</p>
           </div>
           <div>
-            <p className="text-3xl font-semibold text-[#005614]">5.7k</p>
+            <p className="text-3xl font-semibold text-orange-500">5.7k</p>
             <p className="text-lg">Complete Project</p>
           </div>
         </div>
 
-        <Link href={'/services'} className="bg-[#005617] text-white w-[173px] h-[52px] rounded-lg shadow-md hover:scale-105 duration-300 transition flex items-center justify-center">
+        <Link href={'/services'} className="bg-orange-500 text-white w-[173px] h-[52px] rounded-lg shadow-md hover:scale-105 duration-300 transition flex items-center justify-center">
           <p>Explore Now</p>
         </Link>
       </div>
 
       {/* Right Cards */}
-      <div className="grid grid-cols-1 min-[500px]:grid-cols-2 gap-5 sm:gap-10">
+      <div className="grid grid-cols-1 min-[500px]:grid-cols-2 gap-5 sm:gap-10 text-[#011627]">
         {cards.map((card, index) => (
           <motion.div
               key={card.id}
@@ -101,7 +101,7 @@ export default function BusinessGrowth() {
             } border-none`}
           >
             <div
-              className={`w-full h-full p-6 flex flex-col max-[500px]:flex-row gap-5 rounded-[31px] ${card.color}`}
+              className={`bg-black opacity-75 w-full h-full p-6 flex flex-col max-[500px]:flex-row gap-5 rounded-[31px] ${card.color}  !bg-black !opacity-75`}
             >
               {/* Animated Icon Wrapper */}
               <motion.div
@@ -116,7 +116,7 @@ export default function BusinessGrowth() {
               <div className="w-full space-y-3 sm:space-y-5">
                 <div className="w-full space-y-1 sm:space-y-2">
                   <motion.h4
-                    className="text-[26px] font-semibold"
+                    className="text-[26px] font-semibold text-white"
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1, duration: 0.4 }}
@@ -124,7 +124,7 @@ export default function BusinessGrowth() {
                     I Want Leads
                   </motion.h4>
                   <motion.p
-                    className="text-base sm:text-lg sm:leading-[30px] tracking-[0.02em]"
+                    className="text-base text-white sm:text-lg sm:leading-[30px] tracking-[0.02em]"
                     initial={{ opacity: 0, x: 10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2, duration: 0.4 }}

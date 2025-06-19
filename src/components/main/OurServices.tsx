@@ -11,42 +11,42 @@ const services = [
     title: "Social media strategy",
     description:
       "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
-    color: "bg-green-50",
+    color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "02",
     title: "Content creation & curation",
     description:
       "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
-    color: "bg-purple-100",
+    color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "03",
     title: "Paid advertising and promotion",
     description:
       "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
-    color: "bg-blue-50",
+    color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "04",
     title: "Analytics and reporting",
     description:
       "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
-    color: "bg-pink-100",
+    color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "05",
     title: "Influencer marketing",
     description:
       "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
-    color: "bg-orange-100",
+    color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "06",
     title: "Social media listening",
     description:
       "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
-    color: "bg-amber-50",
+    color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
 ];
 
@@ -59,10 +59,10 @@ export default function OurServices() {
   }, []);
 
   return (
-    <section className="py-16 pb-10 px-2 sm:px-4 max-w-7xl mx-auto">
+    <section className="py-16 pb-10 px-2 sm:px-4 max-w-7xl mx-auto text-white">
       <div className="flex justify-between gap-4 items-center mb-8">
         <div>
-          <p className="text-sm tracking-[0.07em] uppercase text-[#10410F]">
+          <p className="text-sm tracking-[0.07em] uppercase text-dark-orange">
             Our Services
           </p>
           <h2 className="text-3xl md:text-4xl leading-[28px] sm:leading-[48px] lg:leading- [68px] font-bold mt-2 max-w-2xl">
@@ -70,7 +70,7 @@ export default function OurServices() {
             Services
           </h2>
         </div>
-        <Link href={'/services'} className="hidden md:block bg-green-900 text-white px-6 py-2 rounded-md hover:bg-green-800 cursor-pointer">
+        <Link href={'/services'} className="hidden md:block bg-dark-orange text-white px-6 py-2 rounded-md hover:bg-light-orange cursor-pointer">
           Discover more
         </Link>
       </div>
@@ -92,9 +92,9 @@ export default function OurServices() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             // whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            transition={{ delay: index * 0.4, duration: 0.6, ease: "easeInOut" }}
+            transition={{ delay: index * 0.3, duration: 0.6, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-[28px] sm:text-[32px] md:leading-[42px] -tracking-normal font-bold text-gray-900 mt-16 md:mt-[87px]">
+            className="text-[28px] sm:text-[32px] md:leading-[42px] -tracking-normal font-bold text-white mt-16 md:mt-[87px]">
               {service.title}
             </motion.h3>
             <motion.p 
@@ -104,12 +104,12 @@ export default function OurServices() {
             whileTap={{ scale: 0.98 }}
             transition={{ delay: index * 0.4, duration: 0.6, ease: "easeInOut" }}
             viewport={{ once: true }}
-               className="text-base text-gray-600 sm:mb-4">
+               className="text-base text-gray-300 sm:mb-4">
               {service.description}
             </motion.p>
             <Link
               href={'/services'}
-              className="text-xl text-[#10410F] font-semibold hover:underline"
+              className="text-xl text-dark-orange font-semibold hover:underline"
             >
               Learn more...
             </Link>

@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             <div>
               <Link
                 href="/contact-us"
-                className="inline-flex items-center text-base font-medium text-dark-green mt-5"
+                className="inline-flex items-center text-base font-medium text-dark-orange mt-5"
               >
                 Contact Us
                 <svg
