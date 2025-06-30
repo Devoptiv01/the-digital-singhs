@@ -27,11 +27,11 @@ export default function Footer() {
             Our Social Media Solutions
           </p>
           <div className="flex flex-wrap gap-4 text-base">
-            <Link className='hover:text-light-orange duration-300' href="/services">Services</Link>
-            <Link className='hover:text-light-orange duration-300' href="/our-portfolio">Our Portfolio</Link>
-            <Link className='hover:text-light-orange duration-300' href="/pricing">Pricing</Link>
-            <Link className='hover:text-light-orange duration-300' href="/about-us">About us</Link>
-            <Link className='hover:text-light-orange duration-300' href="/contact-us">Contact us</Link>
+            <Link className='hover:text-light-orange hover:bg-white px-1 rounded-lg duration-500' href="/services">Services</Link>
+            <Link className='hover:text-light-orange hover:bg-white px-1 rounded-lg duration-500' href="/our-portfolio">Our Portfolio</Link>
+            <Link className='hover:text-light-orange hover:bg-white px-1 rounded-lg duration-500' href="/pricing">Pricing</Link>
+            <Link className='hover:text-light-orange hover:bg-white px-1 rounded-lg duration-500' href="/about-us">About us</Link>
+            <Link className='hover:text-light-orange hover:bg-white px-1 rounded-lg duration-500' href="/contact-us">Contact us</Link>
             {/* <Link href="#">Privacy</Link> */}
           </div>
         </motion.div>

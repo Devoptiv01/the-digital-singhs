@@ -11,15 +11,15 @@ const AboutUsSection = () => {
 
   return (
     <>
-      <section className="bg-gray-100">
+      <section className="bg-black text-white">
         {/* Our Mission */}
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div data-aos="fade-right" className="max-w-lg group">
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl duration-500 group-hover:text-dark-orange">
+              <h2 className="text-3xl font-extrabold  sm:text-4xl duration-500 group-hover:text-dark-orange">
                 Our Mission
               </h2>
-              <p className="mt-4 text-gray-600 text-lg group-hover:text-black duration-500">
+              <p className="mt-4 text-gray-200 text-lg group-hover:text-white duration-500">
                 At The Digital Singhs & Corps, our mission is to empower
                 startups, small businesses, and emerging brands with
                 cutting-edge digital marketing strategies. We aim to tell
@@ -27,13 +27,13 @@ const AboutUsSection = () => {
                 audiences into loyal customers — all through the power of
                 creativity and data.
               </p>
-              <div className="mt-8 animate-bounce ease-in-out ">
+              <div className="mt-8 animate-bounce ease-in-out group">
                 <Link
                   href="/contact-us"
                   className="text-dark-orange font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-orange hover:text-white"
                 >
                   Contact us
-                  <span className="ml-2 ">&#8594;</span>
+                  <span className="ml-2 group-hover:ml-4 duration-500">&#8594;</span>
                 </Link>
               </div>
             </div>
@@ -76,22 +76,22 @@ const AboutUsSection = () => {
               />
             </div>
             <div data-aos="fade-right" className="max-w-lg group">
-              <h2 className="text-3xl font-extrabold text-gray-900 duration-500 group-hover:text-dark-orange sm:text-4xl">
+              <h2 className="text-3xl font-extrabold  duration-500 group-hover:text-dark-orange sm:text-4xl">
                 Our Vision
               </h2>
-              <p className="mt-4 text-gray-600 text-lg group-hover:text-black duration-500">
+              <p className="mt-4 text-gray-200 text-lg group-hover:text-white duration-500">
                 We envision a world where businesses of all sizes can compete on
                 equal footing in the digital landscape. Our goal is to be the
                 catalyst that helps them achieve visibility, growth, and
                 meaningful engagement in a constantly evolving market.
               </p>
-              <div className="mt-8 animate-bounce ease-in-out">
+              <div className="mt-8 animate-bounce ease-in-out group">
                 <Link
                   href="/contact-us"
                   className="text-dark-orange font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-orange hover:text-white"
                 >
                   Contact us
-                  <span className="ml-2 ">&#8594;</span>
+                  <span className="ml-2 group-hover:ml-4 duration-500">&#8594;</span>
                 </Link>
               </div>
             </div>

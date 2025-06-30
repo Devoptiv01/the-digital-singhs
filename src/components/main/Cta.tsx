@@ -5,7 +5,7 @@ const Cta = ({title= "Have a query or need consultation? Contact us today!"}: {t
   return (
     <div>
       {/* cta */}
-      <section className="bg-[#A2D95E] min-w-[250px] flex justify-center items-center p-3">
+      <section className="border-t-2 border-dark-orange min-w-[250px] flex justify-center items-center p-3">
         <div
           className="flex items-center gap-4 md:gap-y-10 flex-col px-10"
           data-aos="fade-up"

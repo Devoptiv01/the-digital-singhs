@@ -127,9 +127,9 @@ const servicesData = [
 ];
 
 const Page = () => (
-  <div className="bg-white dark:bg-gray-950">
+  <div className="bg-black text-white">
     <div>
-      <h2 className="text-3xl font-bold text-center sm:text-5xl">
+      <h2 className="text-3xl font-bold text-center sm:text-5xl text-dark-orange">
         Our Services
       </h2>
       <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">
@@ -137,7 +137,7 @@ const Page = () => (
         Corps to elevate your digital presence and drive growth.
       </p>
     </div>
-    <div className="bg-white dark:bg-gray-950">
+    <div className="bg-black">
       {servicesData.map((service, index) => (
         <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
       ))}

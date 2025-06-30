@@ -135,14 +135,14 @@ export default function ServicesSection() {
   const current = services[selected];
 
   return (
-    <div className="bg-white py-10 px-4 max-w-6xl mx-auto scroll-smooth">
-      <div className="flex justify-center gap-4 mb-6 flex-wrap sticky top-[64px] bg-white py-2">
+    <div className="bg-black text-white py-10 px-4 max-w-6xl mx-auto scroll-smooth">
+      <div className="flex justify-center gap-4 mb-6 flex-wrap sticky top-[64px]  py-2">
         {servicesArray.map((service) => (
           <Link 
             href={`#${service.id}`}
             key={service.id}
             // onClick={() => setSelected(service.label as keyof typeof services)}
-            className={`px-4 py-2 border rounded-md font-medium hover:bg-dark-orange hover:text-white duration-500 hover:scale-105  `}
+            className={`px-4 py-2 border hover:border-dark-orange hover:text-light-orange rounded-md font-medium duration-500 hover:scale-105 bg-black `}
           >
             {service.label}
           </Link>
@@ -153,26 +153,26 @@ export default function ServicesSection() {
       {servicesArray.map((current) => {
         return <div id={current.id} className="scroll-mt-[178px] md:scroll-mt-[120px] grid md:grid-cols-2 gap-10 items-start">
         <div>
-          <h2 className="text-2xl font-bold mb-2">{current.title}</h2>
-          <p className="text-gray-600 mb-4">{current.description}</p>
+          <h2 className="text-2xl font-bold mb-2 text-dark-orange">{current.title}</h2>
+          <p className="text-gray-200 mb-4">{current.description}</p>
           <ul className="list-disc pl-5 space-y-2">
             {current.features.map((feature, idx) => (
-              <li key={idx} className="text-gray-700">
+              <li key={idx} className="text-gray-300">
                 {feature}
               </li>
             ))}
           </ul>
         </div>
-        <div className="bg-gray-50 p-6 rounded-lg border group flex flex-col gap-2">
+        <div className="bg-gray-700 p-6 rounded-lg border group flex flex-col gap-2">
           <h3 className="text-lg font-semibold">Best For</h3>
           <ul className="space-y-2">
             {current.bestFor.map((item, idx) => (
-              <li key={idx} className="text-green-600 group-hover:text-dark-orange duration-500 font-medium">
+              <li key={idx} className="text-green-600 group-hover:text- dark-orange duration-500 font-medium">
                 ✓ {item}
               </li>
             ))}
           </ul>
-          <Link href={'/contact-us'} className=" bg-green-500 group-hover:scale-105 group-hover:bg-dark-orange group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
+          <Link href={'/contact-us'} className=" bg-green-500 group-hover:scale-105 group-hover:bg- dark-orange group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
             Get Custom Quote or Free Demo
           </Link>
         </div>

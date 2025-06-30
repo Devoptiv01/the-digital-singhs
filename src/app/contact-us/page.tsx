@@ -8,7 +8,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="flex flex-col gap-5 pt-5">
+    <div className="flex flex-col gap-5 pt-5 text-white">
       {/* // Cards */}
       <div className="w-full max-w-3xl mx-auto flex flex-wrap gap-5">
         {/* // first  */}
