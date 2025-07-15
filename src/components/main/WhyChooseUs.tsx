@@ -25,8 +25,8 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left graphic */}
         <div className="relative">
-          <div className="bg-orange-400 pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
-            <div className="bg-orange-500 w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
+          <div className="bg-[#E26310] pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
+            <div className="bg-[#ED9121] w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
               <div className="absolute top-1/2 -translate-y-1/2 ">
                 <img src="/icons/laughing.svg" alt="image" className='' />
               </div>

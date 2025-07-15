@@ -22,8 +22,12 @@
   /* --color-light-green: #A2D95E; */
   /* --color-dark-orange: #FF6F3C; */
   /* --color-light-orange: #FF9A65; */
-  --color-light-orange: #F54A00;
-  --color-dark-orange: #FF6900;
+
+  /* --color-light-orange: #F54A00;
+  --color-dark-orange: #FF6900; */
+  --color-light-orange: #d16c2a; 
+--color-dark-orange: #E26310;    
+
 }
 
 @media (prefers-color-scheme: dark) {

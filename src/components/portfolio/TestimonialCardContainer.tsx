@@ -71,7 +71,7 @@ const TestimonialCardContainer = () => {
 //   }, [scrollRef]);
 
   return (
-   <div id="reviews" className="py-12 mt-10 bg-gray-900 ">
+    <div id="reviews" className="py-12 mt-10 bg-gray-900 ">
       <h1 className="mb-10 text-4xl font-bold text-center text-dark-orange">
                 what our client say
       </h1>
