@@ -8,47 +8,48 @@ import { useEffect } from "react";
 const services = [
   {
     id: "01",
-    title: "Social media strategy",
+    title: "Social Media Strategy",
     description:
-      "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
+      "Custom strategies built to grow your audience, boost engagement, and align with business goals.",
     color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "02",
-    title: "Content creation & curation",
+    title: "Content Creation & Curation",
     description:
-      "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
+      "Scroll-stopping content tailored for your brand — reels, posts, graphics, and more.",
     color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "03",
-    title: "Paid advertising and promotion",
+    title: "Paid Advertising & Promotion",
     description:
-      "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
+      "Data-backed ad campaigns across Meta, Google, TikTok, and LinkedIn to drive real results.",
     color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "04",
-    title: "Analytics and reporting",
+    title: "Analytics & Reporting",
     description:
-      "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
+      "Track performance, measure ROI, and make smarter decisions with clear, actionable data.",
     color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "05",
-    title: "Influencer marketing",
+    title: "Influencer Marketing",
     description:
-      "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
+      "Partner with creators that fit your niche and help expand your brand’s reach authentically.",
     color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
   {
     id: "06",
-    title: "Social media listening",
+    title: "Social Media Listening",
     description:
-      "Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper.",
+      "Monitor trends, audience sentiment, and brand mentions to stay ahead and stay relevant.",
     color: " bg-gradient-to-r from-slate-800 via-gray-800 to-neutral-900",
   },
 ];
+
 
 export default function OurServices() {
   useEffect(() => {
@@ -83,7 +84,7 @@ export default function OurServices() {
             // data-aos="fade-up"
             className={`relative w-full  h-fit max-md:pb-6 md:h-[350px] px-6 md:px-[38px] rounded-[20px] shadow-sm ${service.color}  hover:shadow-lg flex flex-col sm:gap-5 gap-2   transition-transform  duration-500 ease-in-out transform hover:scale-[1.07] will-change-transform`}
           >
-            <div className="absolute top-0 left-0 bg-black text-white text-xl font-bold h-12 md:h-16 sm:h-[73px] w-16 rounded-tl-[20px] rounded-br-[20px] flex items-center justify-center">
+            <div className="absolute top-0 left-0 bg-black border border-white/50 text-white text-xl font-bold h-12 md:h-16 sm:h-[73px] w-16 rounded-tl-[20px] rounded-br-[20px] flex items-center justify-center">
               {service.id}
             </div>
             <motion.h3

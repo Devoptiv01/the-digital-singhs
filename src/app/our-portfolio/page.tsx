@@ -5,16 +5,63 @@ import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import TestimonialCardContainer from "@/components/portfolio/TestimonialCardContainer";
 import React, { useState } from "react";
 
+
+const portfolioData = [
+  {
+    ImageHref: "/portfolio/strategy.jpg",
+    category: "Strategy",
+    title: "Viral Growth Strategy",
+    button: "View Strategy",
+    buttonHref: "#",
+  },
+  {
+    ImageHref: "/portfolio/content.jpg",
+    category: "Content Creation",
+    title: "Scroll-Stopping Content",
+    button: "View Content",
+    buttonHref: "#",
+  },
+  {
+    ImageHref: "/portfolio/production.jpg",
+    category: "Video Production",
+    title: "Short-Form Shoots",
+    button: "View Projects",
+    buttonHref: "#",
+  },
+  {
+    ImageHref: "/portfolio/editing.jpg",
+    category: "Editing",
+    title: "High-Impact Edits",
+    button: "Explore Edits",
+    buttonHref: "#",
+  },
+  {
+    ImageHref: "/portfolio/ads.jpg",
+    category: "Paid Ads",
+    title: "Performance Advertising",
+    button: "View Campaigns",
+    buttonHref: "#",
+  },
+  {
+    ImageHref: "/portfolio/reporting.jpg",
+    category: "Analytics",
+    title: "Insight-Driven Reporting",
+    button: "View Insights",
+    buttonHref: "#",
+  },
+];
+
+
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
 
-interface HandleProjectFn {
+  interface HandleProjectFn {
     (category: string): void;
-}
+  }
 
-const handleProject: HandleProjectFn = (category) => {
+  const handleProject: HandleProjectFn = (category) => {
     setShowCard(category);
-};
+  };
 
   return (
     <>
@@ -103,61 +150,24 @@ const handleProject: HandleProjectFn = (category) => {
               </ul>
             </div>
           </div> */}
-          
           <div className="flex flex-wrap -mx-4">
-            <PortfolioCard
-              ImageHref="/temp-images/image.png"
-              category="Branding"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-            <PortfolioCard
-              ImageHref="/temp-images/image.png"
-              category="marketing"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-            <PortfolioCard
-              ImageHref="/temp-images/image.png"
-              category="marketing"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-            <PortfolioCard
-              ImageHref="/temp-images/image.png"
-              category="Development"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-            <PortfolioCard
-              ImageHref="/temp-images/image.png"
-              category="Design"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-            <PortfolioCard
-              ImageHref="/temp-images/image.png"
-              category="Marketing"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
+            {portfolioData.map((item, index) => (
+              <PortfolioCard
+                key={index}
+                // ImageHref={item.ImageHref}
+                ImageHref={"/temp-images/image.png"}
+                category={item.category}
+                title={item.title}
+                button={item.button}
+                buttonHref={item.buttonHref}
+                showCard={showCard}
+              />
+            ))}
           </div>
 
-          <InstaVideos/>
+          <InstaVideos />
         </div>
-          <TestimonialCardContainer/>
+        <TestimonialCardContainer />
       </section>
     </>
   );

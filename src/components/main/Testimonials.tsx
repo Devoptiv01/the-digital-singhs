@@ -7,24 +7,25 @@ import Link from 'next/link';
 
 const testimonials = [
   {
-    name: 'Dylan Frost',
-    title: 'E-commerce Store Owner',
-    text: 'The team at Soziley helped us increase website traffic and sales through targeted social media advertising. Their expertise and attention to detail were invaluable to our business.',
-    badge: '/icons/star.svg',
+    name: "Dylan Frost",
+    title: "E-commerce Founder",
+    text: "Digital Singhs helped us scale content fast — from zero traction to daily conversions through short-form videos. Their system actually works.",
+    badge: "/icons/star.svg",
   },
   {
-    name: 'Ryan Warner',
-    title: 'B2B Company Owner',
-    text: 'As a B2B company, we were unsure of how to effectively use social media. Soziley developed a LinkedIn strategy that has generated leads and improved our brand visibility.',
-    badge: '/icons/rocket.svg',
+    name: "Ryan Warner",
+    title: "B2B SaaS CEO",
+    text: "We weren’t looking for followers — we needed leads. Their LinkedIn scripts and editing gave us both reach and revenue within weeks.",
+    badge: "/icons/rocket.svg",
   },
   {
-    name: 'Laura Glover',
-    title: 'Beauty Brand Owner',
-    text: 'The Soziley team’s skills and creativity helped us build a visually stunning Instagram presence that has increased brand awareness and sales for our beauty brand.',
-    badge: '/icons/heart.svg',
+    name: "Laura Glover",
+    title: "Beauty Brand Owner",
+    text: "From creative to consistent posting, their team made us go viral on Reels. Sales and brand trust followed fast. Highly recommend.",
+    badge: "/icons/heart.svg",
   },
 ];
+
 
 const partners = [
   '/logos/logo1.png',
@@ -46,14 +47,14 @@ export default function Testimonials() {
           className="w-full lg:w-1/3 space-y-7 md:space-y-10"
         >
           <div className="pb-5sm:pb-10">
-          <h4 className="text-orange-500 uppercase tracking-widest text-sm mb-3">Testimonials</h4>
+          <h4 className="text-light-orange uppercase tracking-widest text-sm mb-3">Testimonials</h4>
           <h2 className="text-3xl md:text-5xl font-semibold mb-4 lg:leading-[68px]">
             Don’t just take<br/> our word for it:
           </h2>
           <p className="mb-6 text-[#818181]">
             Hear from Our Satisfied Clients
           </p>
-          <Link href={'/our-portfolio'} className="bg-orange-500 hover:bg-orange-400 text-base h-14 sm:h-[66px] w-[213px] cursor-pointer transition px-6 py-3 rounded-[20px] text-black font-medium flex items-center gap-2">
+          <Link href={'/our-portfolio'} className="bg-light-orange hover:bg-dark-orange text-base h-14 sm:h-[66px] w-[213px] cursor-pointer transition px-6 py-3 rounded-[20px] text-black font-medium flex justify-center items-center gap-2">
             Discover more <ArrowUpRight  className='h-5 w-5'/>
           </Link>
           </div>
@@ -100,8 +101,8 @@ export default function Testimonials() {
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-1">
                   <div className='flex flex-col gap-2'>
-                    <h4 className="font-bold text-orange-500 text-lg md:text-2xl">{t.name}</h4>
-                    <p className="text-sm text-orange-500  font-medium">{t.title}</p>
+                    <h4 className="font-bold text-light-orange text-lg md:text-2xl">{t.name}</h4>
+                    <p className="text-sm text-light-orange  font-medium">{t.title}</p>
                   </div>
                   <div className="relative w-14 h-14">
                   <Image

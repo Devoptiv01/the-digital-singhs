@@ -107,8 +107,8 @@ export default function CaseStudy() {
       <div className="flex justify-center max-sm:flex-wrap mx-auto  max-w-fit gap-5 overflow-x-hidden no-scrollbar">
 
         <div className="sm:max-w-1/4 w-full space-y-3 sm:space-y-7">
-          <p className="text-orange-500 font-medium text-xl sm:text-[26px]">CASE STUDY</p>
-          <h2 className="text-4xl md:text-[45px] font-bold mt-2 mb-4 text-orange-400">
+          <p className="text-white font-medium text-xl sm:text-[26px]">CASE STUDY</p>
+          <h2 className="text-4xl md:text-[45px] font-bold mt-2 mb-4 text-light-orange">
             OUR CLIENT
             <br />
             GETS RESULTS

@@ -5,11 +5,12 @@ import Link from "next/link";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const features = [
-  "PageTraffic offers top-notch SEO and digital marketing.",
-  "PageTraffic offers top-notch SEO.",
-  "PageTraffic offers top-notch.",
-  "PageTraffic offers top-notch SEO and.",
+  "Custom strategies for rapid, scalable brand growth.",
+  "High-ROI campaigns tailored to your business goals.",
+  "Engaging content that drives traffic and conversions.",
+  "Performance tracking that fuels smarter decisions.",
 ];
+
 // border-red-300 bg-red-50'
 const cards = [
   {
@@ -18,6 +19,8 @@ const cards = [
     imgcolor: "bg-[#FFECEA]",
     color: "bg-white",
     ctaColor: "text-[#FF1D03]",
+    title: "Boost Local Visibility",
+    text: "Attract nearby customers and grow foot traffic to your business.",
   },
   {
     id: 2,
@@ -25,6 +28,8 @@ const cards = [
     imgcolor: "bg-[#D2FFFB]",
     color: "bg-[#f6fffe]",
     ctaColor: "text-cyan-600",
+    title: "Generate Quality Leads",
+    text: "Reach ready-to-convert audiences and increase qualified inquiries.",
   },
   {
     id: 3,
@@ -32,6 +37,8 @@ const cards = [
     imgcolor: "bg-[#D2FFFB]",
     color: "bg-[#f6fffe]",
     ctaColor: "text-cyan-600",
+    title: "Drive Real Engagement",
+    text: "Build trust and spark conversations that keep your brand top-of-mind.",
   },
   {
     id: 4,
@@ -39,6 +46,8 @@ const cards = [
     imgcolor: "bg-[#FFECEA]",
     color: "bg-white",
     ctaColor: "text-red-500",
+    title: "Increase Conversions",
+    text: "Turn browsers into buyers with tailored conversion strategies.",
   },
 ];
 
@@ -71,16 +80,16 @@ export default function BusinessGrowth() {
 
         <div className="flex gap-10 sm:pt-4">
           <div>
-            <p className="text-3xl font-semibold text-[#FF1D03]">1.9k</p>
+            <p className="text-3xl font-semibold text-[#fa5947]">1.9k</p>
             <p className="text-lg">Total Audience</p>
           </div>
           <div>
-            <p className="text-3xl font-semibold text-orange-500">5.7k</p>
+            <p className="text-3xl font-semibold text-orange-400">5.7k</p>
             <p className="text-lg">Complete Project</p>
           </div>
         </div>
 
-        <Link href={'/services'} className="bg-orange-500 text-white w-[173px] h-[52px] rounded-lg shadow-md hover:scale-105 duration-300 transition flex items-center justify-center">
+        <Link href={'/services'} className="bg-dark-orange text-black w-[173px] h-[52px] rounded-lg shadow-md hover:scale-105 duration-300 transition flex items-center justify-center">
           <p>Explore Now</p>
         </Link>
       </div>
@@ -121,7 +130,7 @@ export default function BusinessGrowth() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1, duration: 0.4 }}
                   >
-                    I Want Leads
+                    {card.title}
                   </motion.h4>
                   <motion.p
                     className="text-base text-white sm:text-lg sm:leading-[30px] tracking-[0.02em]"
@@ -129,7 +138,7 @@ export default function BusinessGrowth() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2, duration: 0.4 }}
                   >
-                    Looking to get higher ROI by improving website.
+                   {card.text}
                   </motion.p>
                 </div>
                 <motion.div
@@ -138,7 +147,7 @@ export default function BusinessGrowth() {
                   transition={{ delay: 0.3, duration: 0.3 }}
                 >
                   <Link
-                    href="#"
+                    href=""
                     className={`text-lg font-medium ${card.ctaColor}`}
                   >
                     View more

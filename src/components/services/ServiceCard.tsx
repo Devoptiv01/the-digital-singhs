@@ -22,7 +22,7 @@ const ServiceCard = ({ icon, title, description, features, image, reverse }: any
           {/* <div className="bg-black dark:bg-white text-white dark:text-black p-3 rounded-full">{icon}</div> */}
           <h3 className="text-2xl font-bold">{title}</h3>
         </div>
-        <p className="text-lg text-gray-200">{description}</p>
+        <p className="text-lg text-gray-200 max-w-xl">{description}</p>
         <ul className="mt-4 list-disc list-inside text-gray-300">
           {features.map((item: string, idx: number) => (
             <li key={idx}>{item}</li>
@@ -33,7 +33,7 @@ const ServiceCard = ({ icon, title, description, features, image, reverse }: any
           <ArrowRight/>
         </Link>
       </div>
-      <div className="lg:max-w-1/2 max-h-[400px]">
+      <div className=" max-h-[400px] lg:max-w-[400px]">
         <motion.img
           src={image}
           alt={title}

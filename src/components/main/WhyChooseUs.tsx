@@ -1,23 +1,26 @@
 'use client';
 import React from 'react';
+import { FaBullseye, FaUsers, FaChartLine } from "react-icons/fa";
 
 const benefits = [
   {
-    icon: "/icons/thumbup.svg",
-    title: 'Proven Result',
-    desc: 'We have a track record of delivering measurable results for our clients through our effective social media strategies.',
+    icon: <FaBullseye className="w-10 h-10 mx-auto" />,
+    title: "Strategic Approach",
+    desc: "We align every campaign with your business goals to deliver impactful outcomes, not just impressions.",
   },
   {
-    icon: '/icons/okey.svg',
-    title: 'Expertise and Experience',
-    desc: 'Our team is composed of social media experts with a wealth of knowledge and experience in the industry.',
+    icon: <FaUsers className="w-10 h-10 mx-auto" />,
+    title: "Dedicated Team",
+    desc: "Work with a passionate team that treats your brand like their own — responsive, reliable, and results-driven.",
   },
   {
-    icon:  '/icons/folder.svg',
-    title: 'Data-Driven Decisions',
-    desc: 'We use analytics and reporting to make data-driven decisions that drive results for your business.',
+    icon: <FaChartLine className="w-10 h-10 mx-auto" />,
+    title: "Performance Focused",
+    desc: "We prioritize ROI and performance metrics that matter, so every dollar works harder for your business.",
   },
 ];
+
+
 
 export default function WhyChooseUs() {
   return (
@@ -25,8 +28,8 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left graphic */}
         <div className="relative">
-          <div className="bg-[#E26310] pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
-            <div className="bg-[#ED9121] w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
+          <div className="bg-dark-orange pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
+            <div className="bg-light-orange w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
               <div className="absolute top-1/2 -translate-y-1/2 ">
                 <img src="/icons/laughing.svg" alt="image" className='' />
               </div>
@@ -46,20 +49,21 @@ export default function WhyChooseUs() {
         {/* Text content */}
         <div className="space-y-6 max-md: mt-5">
         <div className="space-y-4">
-            <p className="uppercase text-sm tracking-wider text-orange-500">Why Choose Us</p>
-            <h2 className="md:text-[46px] sm:text-4xl text-3xl font-bold text-orange-400 sm:leading-[48px] md:leading-[68px]">
-                The Benefits of Partnering <br /> with Soziely
+            <p className="uppercase text-base tracking-wider">Why Choose Us</p>
+            <h2 className="md:text-[46px] sm:text-4xl text-3xl font-bold text-dark-orange sm:leading-[48px] md:leading-[68px]">
+                The Benefits of Partnering <br /> with The Digital Singhs
             </h2>
           </div>
 
           <div className="space-y-5">
             {benefits.map((item, i) => (
               <div key={i} className="flex gap-4 md:gap-8 items-start h-fit">
-                <div className=" text-yellow-400 text-2xl p-2 min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[100px] flex items-center justify-center relative ">
-                  <img src={item.icon} alt="image" className='min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[70px] md:min-h-[100px] absolute z-10' />
+                <div className=" text-dark-orange text-2xl p-2 min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[100px] flex items-center justify-center relative ">
+                  {/* <img src={item.icon} alt="image" className='min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[70px] md:min-h-[100px] absolute z-10' /> */}
+                  {item.icon}
                 </div>
                 <div className='flex flex-col justify-between h-full'>
-                  <p className="font-semibold text-xl md:text-2xl text-orange-500">{item.title}</p>
+                  <p className="font-semibold text-xl md:text-2xl text-light-orange">{item.title}</p>
                   <p className="text-sm md:text-base">{item.desc}</p>
                 </div>
               </div>

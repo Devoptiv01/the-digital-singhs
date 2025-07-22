@@ -72,59 +72,62 @@ const servicesData = [
   {
     title: "Social Media Management",
     description:
-      "Platforms: Instagram, Facebook, LinkedIn, TikTok, YouTube, and more.",
+      "We manage Instagram, Facebook, LinkedIn, TikTok, YouTube, and more — so you stay consistent and on-brand.",
     features: [
-      "Scheduling and posting content",
-      "Profile optimization",
-      "Analytics tracking and reporting",
+      "Content scheduling & posting",
+      "Profile setup & optimization",
+      "Analytics tracking & insights",
     ],
     image: "/images/services/social-media-marketing.avif",
   },
   {
     title: "Paid Ads & Campaigns",
     description:
-      "Creation and management of paid advertising on Meta, Google Ads, LinkedIn Ads, TikTok Ads.",
+      "We run performance-driven ads on Meta, Google, LinkedIn, and TikTok — built to convert, not just spend.",
     features: [
-      "Campaign strategy",
-      "Targeting",
-      "A/B testing",
-      "Performance optimization",
+      "Ad strategy & creative",
+      "Smart audience targeting",
+      "A/B testing & optimization",
+      "ROI-focused reporting",
     ],
     image: "/images/services/paid-Ads.jpg",
   },
   {
     title: "Content Creation",
-    description: "Types of content: Reels, Stories, Graphics, Static posts.",
+    description:
+      "From Reels to Stories to carousels — we create content that clicks, sticks, and scales.",
     features: [
-      "Focus on engaging content",
-      "Branded content",
-      "Platform-optimized design",
+      "High-performing visuals",
+      "Branded, scroll-stopping content",
+      "Optimized for each platform",
     ],
     image: "/images/services/content-creation.jpg",
   },
   {
     title: "Strategy & Consulting",
     description:
-      "Helping brands develop strong digital foundations and growth plans.",
+      "Build with clarity. We craft winning content strategies and growth roadmaps that drive real results.",
     features: [
-      "Digital brand strategy",
-      "Content planning",
-      "Growth roadmaps",
-      "Campaign strategy sessions",
+      "Brand & content strategy",
+      "Platform planning",
+      "Growth & campaign roadmaps",
+      "1:1 strategy sessions",
     ],
     image: "/images/services/people-analyzing.avif",
   },
   {
     title: "Community Engagement & Growth",
-    description: "Building real communities through conversation and value.",
+    description:
+      "We help you grow real communities — through authentic connection and engagement that compounds.",
     features: [
       "Organic follower growth",
-      "Engagement campaigns (comments, DMs, shares)",
-      "Community building & retention strategies",
+      "Engagement via DMs, comments, shares",
+      "Community retention systems",
     ],
     image: "/images/services/communities.jpg",
   },
 ];
+
 
 const Page = () => (
   <div className="bg-black text-white">
@@ -133,8 +136,7 @@ const Page = () => (
         Our Services
       </h2>
       <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">
-        Discover the wide range of services offered by The Digital Singhs &
-        Corps to elevate your digital presence and drive growth.
+        At The Digital Singhs, we don’t do one-size-fits-all. We build content systems that grab attention, build trust, and convert — from strategy to ads to analytics.
       </p>
     </div>
     <div className="bg-black">

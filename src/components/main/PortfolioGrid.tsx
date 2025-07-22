@@ -58,7 +58,7 @@ export default function PortfolioGrid() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Link href={'/our-portfolio'} className="bg-orange-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 duration-500 transition cursor-pointer">
+        <Link href={'/our-portfolio'} className="bg-dark-orange text-black px-6 py-3 rounded-full shadow-lg duration-500 transition cursor-pointer">
           View more
         </Link>
       </motion.div>

@@ -67,10 +67,10 @@ const servicesArray = [
     label: "Social Media",
     title: "Social Media Management",
     description:
-      "We manage Instagram, Facebook, LinkedIn, TikTok & YouTube to keep your brand active, optimized, and engaging.",
+      "We manage Instagram, TikTok, LinkedIn & more to keep your brand consistent, optimized, and top of mind.",
     features: [
       "Daily posting & scheduling",
-      "Analytics & insights tracking",
+      "Analytics tracking & insights",
       "Audience targeting & growth",
     ],
     bestFor: ["Startups", "Local Brands", "Online Stores"],
@@ -80,11 +80,11 @@ const servicesArray = [
     label: "Paid Ads",
     title: "Paid Ads & Campaigns",
     description:
-      "High-converting campaigns across Meta, Google, TikTok, and LinkedIn, managed with data-driven precision.",
+      "High-ROI campaigns across Meta, Google, TikTok, and LinkedIn — planned, tested, and optimized to scale.",
     features: [
-      "Campaign setup & audience testing",
-      "Performance tracking & optimization",
-      "Cross-platform integration",
+      "Smart campaign setup",
+      "A/B testing & optimization",
+      "Cross-platform strategy",
     ],
     bestFor: ["Ecommerce", "SaaS", "Service Providers"],
   },
@@ -93,11 +93,11 @@ const servicesArray = [
     label: "Content Creation",
     title: "Content Creation",
     description:
-      "Branded content that connects and converts — Reels, stories, graphics & more created to match your voice.",
+      "Reels, stories, carousels & more — branded content built to grab attention and drive action.",
     features: [
-      "Custom reels & stories",
-      "Post design with brand consistency",
-      "Creative ideation & scripting",
+      "Scroll-stopping reels & stories",
+      "On-brand post design",
+      "Creative concepts & scripting",
     ],
     bestFor: ["Influencers", "Lifestyle Brands", "Startups"],
   },
@@ -106,11 +106,11 @@ const servicesArray = [
     label: "Strategy",
     title: "Strategy & Consulting",
     description:
-      "Strategic planning for digital growth: launch roadmaps, audits, funnel optimization and more.",
+      "Clear plans for real growth — from brand audits to content roadmaps to funnel strategy.",
     features: [
       "Platform audits & insights",
-      "Content & ad strategy planning",
-      "Brand positioning consultation",
+      "Content & campaign planning",
+      "Growth & positioning strategy",
     ],
     bestFor: ["New Ventures", "Pivoting Brands", "Scaling Teams"],
   },
@@ -119,15 +119,16 @@ const servicesArray = [
     label: "Community",
     title: "Community Engagement & Growth",
     description:
-      "We grow engaged communities with organic strategies — replies, interactions, and DMs that convert.",
+      "Grow loyal audiences through organic engagement — comments, DMs, and content that builds trust.",
     features: [
-      "Engagement management",
-      "Follower growth campaigns",
-      "Community-based content",
+      "Engagement & replies",
+      "Organic growth campaigns",
+      "Retention-focused content",
     ],
     bestFor: ["Niche Influencers", "Local Brands", "Personal Brands"],
   },
 ];
+
 
 
 export default function ServicesSection() {

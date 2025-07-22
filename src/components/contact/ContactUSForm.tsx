@@ -250,7 +250,7 @@ const ContactUsForm = () => {
 
                 <textarea name="message" value={formData.message} onChange={handleChange} className="w-full p-2 border rounded-md outline-none" placeholder="Message"></textarea>
 
-                <button type="submit" className="bg-orange-600 w-full md: text-white p-3 rounded-md h-12">
+                <button type="submit" className="bg-dark-orange w-full md: text-white p-3 rounded-md h-12">
                   {status === "submitting" ? <RefreshIcon className="animate-spin" /> : "Send"}
                 </button>
                 {status === "success" ? <p>Thank you for contacting us, we will reach back to you in a short time.</p> : ''}

@@ -62,22 +62,20 @@ const SocialMediaShowcase = () => {
       {/* Foreground Content */}
       <div className="relative z-10">
         <div className="text-center mb-10" data-aos="fade-up">
-          <p className="text-sm text-orange-500 uppercase font-medium tracking-wider">
-            Social Media Marketing Agency
+          <p className="text-sm text-dark-orange uppercase font-medium tracking-wider">
+            Social Media Growth Experts
           </p>
           <h2 className="text-3xl lg:text-5xl font-bold mt-2 text-white">
-            Boost Your Social Media Presence with Our Expert Agency Services
+            Scale with Content That Performs
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-white">
-            Based in Canada, The Digital Singhs & Corps is a social media
-            marketing startup helping brands grow online through strategy,
-            content, and community engagement.
+            We’re The Digital Singhs — a Canadian agency built to help brands scale fast through strategy, storytelling, and daily execution. From reels to results, we turn content into momentum.
           </p>
           <button
             data-aos="zoom-in"
             data-aos-delay='1000'
             onClick={() => router.push("/services")}
-            className="mt-6 px-6 py-3 rounded-md bg-orange-600 hover:bg-orange-700 text-white transition duration-300"
+            className="mt-6 px-6 py-3 rounded-md bg-dark-orange hover:bg-light-orange text-black transition duration-300"
           >
             Discover more ↗
           </button>
@@ -157,11 +155,11 @@ const SocialMediaShowcase = () => {
           data-aos="fade-up"
         >
           <div>
-            <p className="text-3xl font-bold">😎 34+</p>
+            <p className="text-3xl font-bold">😎 15+</p>
             <p className="text-sm mt-2">Years Experience</p>
           </div>
           <div>
-            <p className="text-3xl font-bold">💞 68M</p>
+            <p className="text-3xl font-bold">💞 58M</p>
             <p className="text-sm mt-2">Followers TikTok</p>
           </div>
           <div>

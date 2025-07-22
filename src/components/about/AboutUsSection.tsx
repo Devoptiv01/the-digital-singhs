@@ -20,12 +20,10 @@ const AboutUsSection = () => {
                 Our Mission
               </h2>
               <p className="mt-4 text-gray-200 text-lg group-hover:text-white duration-500">
-                At The Digital Singhs & Corps, our mission is to empower
-                startups, small businesses, and emerging brands with
-                cutting-edge digital marketing strategies. We aim to tell
-                stories that resonate, build communities that last, and convert
-                audiences into loyal customers — all through the power of
-                creativity and data.
+                To build repeatable, scalable growth systems that empower brands
+                to win on social — without the chaos, burnout, or guesswork. We
+                help you own your voice, grow your audience, and build digital
+                leverage that compounds over time.
               </p>
               <div className="mt-8 animate-bounce ease-in-out group">
                 <Link
@@ -33,7 +31,9 @@ const AboutUsSection = () => {
                   className="text-dark-orange font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-orange hover:text-white"
                 >
                   Contact us
-                  <span className="ml-2 group-hover:ml-4 duration-500">&#8594;</span>
+                  <span className="ml-2 group-hover:ml-4 duration-500">
+                    &#8594;
+                  </span>
                 </Link>
               </div>
             </div>
@@ -80,10 +80,13 @@ const AboutUsSection = () => {
                 Our Vision
               </h2>
               <p className="mt-4 text-gray-200 text-lg group-hover:text-white duration-500">
-                We envision a world where businesses of all sizes can compete on
-                equal footing in the digital landscape. Our goal is to be the
-                catalyst that helps them achieve visibility, growth, and
-                meaningful engagement in a constantly evolving market.
+                We see a future where every brand — big or small — can scale
+                with clarity, not chaos. A future where storytelling isn’t a
+                luxury, but a growth lever available to anyone willing to show
+                up with intention. Our vision is to help brands break through
+                the noise, take control of their narrative, and turn digital
+                presence into real-world momentum — through content that
+                performs, not just posts.
               </p>
               <div className="mt-8 animate-bounce ease-in-out group">
                 <Link
@@ -91,7 +94,9 @@ const AboutUsSection = () => {
                   className="text-dark-orange font-semibold py-3 px-5 rounded-xl duration-500 hover:bg-dark-orange hover:text-white"
                 >
                   Contact us
-                  <span className="ml-2 group-hover:ml-4 duration-500">&#8594;</span>
+                  <span className="ml-2 group-hover:ml-4 duration-500">
+                    &#8594;
+                  </span>
                 </Link>
               </div>
             </div>
