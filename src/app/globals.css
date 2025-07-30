@@ -29,8 +29,9 @@
   /* --color-light-orange: #d16c2a;  */
   /* --color-dark-orange: #E26310;     */
   
-  --color-light-orange: #FFAA33; 
---color-dark-orange: #fda900;   
+  --color-extra-light-orange: #ff7c5e; 
+  --color-light-orange: #ff6744; 
+  --color-dark-orange: #e35433;   
 
 }
 

@@ -26,9 +26,9 @@ export default function Home() {
         <OurServices />
         <BusinessGrowth />
         <WhyChooseUs />
-        <PortfolioGrid />
+        {/* <PortfolioGrid /> */}
         <Testimonials />
-        <CaseStudy />
+        {/* <CaseStudy /> */}
         {/* <BlogPostGrid/> */}
         <ContactSection />
       </div>

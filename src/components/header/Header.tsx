@@ -52,12 +52,12 @@ const Header = () => {
                   </Link>
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
                 </li> */}
-                <li className="w-full min-w-[100px] flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
+                {/* <li className="w-full min-w-[100px] flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/our-portfolio"} className=" w-full min-w-[80px]">
                     Our Portfolio
                   </Link>
                   <div className="w-0 h-[2px] rounded-full group-hover:w-full duration-300 bg-dark-orange"></div>
-                </li>
+                </li> */}
                 <li className="w-full min-w-16 flex flex-col mt-1  items-center gap-1 group duration-300 cursor-pointer">
                   <Link href={"/about-us"}>
                   About us
@@ -120,7 +120,7 @@ const Header = () => {
               {[
                 { href: "/services", label: "services" },
                 { href: "/pricing", label: "Pricing" },
-                { href: "/our-portfolio", label: "Our Portfolio" },
+                // { href: "/our-portfolio", label: "Our Portfolio" },
                 { href: "/about-us", label: "about" },
                 { href: "/contact-us", label: "Contact Us" },
               ].map(({ href, label }) => (

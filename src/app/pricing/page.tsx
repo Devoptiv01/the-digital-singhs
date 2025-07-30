@@ -173,7 +173,7 @@ export default function ServicesSection() {
               </li>
             ))}
           </ul>
-          <Link href={'/contact-us'} className=" bg-green-500 group-hover:scale-105 group-hover:bg- dark-orange group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
+          <Link href={'/contact-us'} className=" bg-green-500 group-hover:bg-green-700  group-hover:scale-105 group-hover:bg- dark-orange group-hover:text-white duration-500 text-white px-4 py-2 rounded-md font-semibold">
             Get Custom Quote or Free Demo
           </Link>
         </div>
