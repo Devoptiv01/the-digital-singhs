@@ -1,26 +1,22 @@
 'use client';
 import React from 'react';
+import { FaBullseye, FaChartLine, FaUsers } from 'react-icons/fa6';
 
 const benefits = [
   {
-    image: "/prod/images/ProudlyCanadian.png",
-    title: "Proudly Canadian",
-    desc: "Rooted in Canadian values, we understand the local market and deliver strategies that resonate nationwide.",
+    icon: <FaBullseye className="w-10 h-10 mx-auto" />,
+    title: "Strategic Approach",
+    desc: "We align every campaign with your business goals to deliver impactful outcomes, not just impressions.",
   },
   {
-    image: "/prod/images/CustomStrategies.png",
-    title: "Custom Strategies",
-    desc: "Every brand is unique — we craft personalized marketing plans tailored to your specific goals and audience.",
+    icon: <FaUsers className="w-10 h-10 mx-auto" />,
+    title: "Dedicated Team",
+    desc: "Work with a passionate team that treats your brand like their own — responsive, reliable, and results-driven.",
   },
   {
-    image: "/prod/images/500+Posts_Mont.png",
-    title: "500+ Posts_Mont",
-    desc: "Our team consistently delivers over 500 high-quality posts monthly to keep your brand active and engaging.",
-  },
-  {
-    image: "/prod/images/2xROIonAds.png",
-    title: "2x ROI on Ads",
-    desc: "Achieve double the return on your ad spend with campaigns optimized for performance and real results.",
+    icon: <FaChartLine className="w-10 h-10 mx-auto" />,
+    title: "Performance Focused",
+    desc: "We prioritize ROI and performance metrics that matter, so every dollar works harder for your business.",
   },
 ];
 
@@ -62,7 +58,8 @@ export default function WhyChooseUs() {
               <div key={i} className="flex gap-4 md:gap-8 items-start h-fit">
                 <div className=" text-dark-orange text-2xl p-2 min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[100px] flex items-center justify-center relative ">
                   {/* <img src={item.icon} alt="image" className='min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[70px] md:min-h-[100px] absolute z-10' /> */}
-                  <img src={item.image} alt="icon" className='h-16 w-16 -mt-2' />
+                  {item.icon}
+                  {/* <img src={item.image} alt="icon" className='h-16 w-16 -mt-2' /> */}
                 </div>
                 <div className='flex flex-col justify-between h-full'>
                   <p className="font-semibold text-xl md:text-2xl text-light-orange">{item.title}</p>

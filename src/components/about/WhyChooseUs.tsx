@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
           <div className="col-span-2 space-y-6 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
             <div className="bg-gray-800 p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
-                src="/temp-images/image.png"
+                src="/prod/images/CustomStrategies.png"
                 alt="icons"
                 className="h-10 w-10 rounded-lg"
               />
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="bg-gray-800 p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
-                src="/temp-images/image.png"
+                src="/prod/images/ProudlyCanadian.png"
                 alt="icons"
                 className="h-10 w-10 rounded-lg"
               />
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="bg-gray-800 p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
-                src="/temp-images/image.png"
+                src="/prod/images/2xROIonAds.png"
                 alt="icons"
                 className="h-10 w-10 rounded-lg"
               />
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="bg-gray-800 p-5 rounded-2xl shadow-lg hover:scale-110 duration-500">
               <img
-                src="/temp-images/image.png"
+                src="/prod/images/500+Posts_Mont.png"
                 alt="icons"
                 className="h-10 w-10 rounded-lg"
               />
