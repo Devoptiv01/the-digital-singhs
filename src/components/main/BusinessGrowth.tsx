@@ -15,7 +15,7 @@ const features = [
 const cards = [
   {
     id: 1,
-    icon: "/icons/pin.svg",
+    icon: "/prod/images/BoostLocalVisibility.png",
     imgcolor: "bg-[#FFECEA]",
     color: "bg-white",
     ctaColor: "text-[#FF1D03]",
@@ -24,7 +24,7 @@ const cards = [
   },
   {
     id: 2,
-    icon: "/icons/leads-green.svg",
+    icon: "/prod/images/GenerateQualityLeads.png",
     imgcolor: "bg-[#D2FFFB]",
     color: "bg-[#f6fffe]",
     ctaColor: "text-cyan-600",
@@ -33,7 +33,7 @@ const cards = [
   },
   {
     id: 3,
-    icon: "/icons/leads-green.svg",
+    icon: "/prod/images/DriveRealEngagement.png",
     imgcolor: "bg-[#D2FFFB]",
     color: "bg-[#f6fffe]",
     ctaColor: "text-cyan-600",
@@ -42,7 +42,7 @@ const cards = [
   },
   {
     id: 4,
-    icon: "/icons/pin.svg",
+    icon: "/prod/images/IncreaseConversions.png",
     imgcolor: "bg-[#FFECEA]",
     color: "bg-white",
     ctaColor: "text-red-500",

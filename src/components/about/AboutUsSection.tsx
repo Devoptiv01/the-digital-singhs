@@ -49,14 +49,14 @@ const AboutUsSection = () => {
                   e.currentTarget.pause();
                   e.currentTarget.currentTime = 0;
                 }}
-                className="w-full rounded-lg shadow-md"
-                src="/videos/video-center.mp4"
+                className="w-fit h-fit rounded-lg shadow-md"
+                src="/prod/images/OurMission.mp4"
               />
             </div>
           </div>
         </div>
 
-        {/* Our Mission */}
+        {/* Our Vision */}
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div data-aos="fade-left" className="mt-8 md:mt-0">
@@ -72,7 +72,7 @@ const AboutUsSection = () => {
                   e.currentTarget.currentTime = 0;
                 }}
                 className="w-full rounded-lg shadow-md"
-                src="/videos/video-center.mp4"
+                src="/prod/images/OurVision.mp4"
               />
             </div>
             <div data-aos="fade-right" className="max-w-lg group">

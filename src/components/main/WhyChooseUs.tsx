@@ -1,26 +1,28 @@
 'use client';
 import React from 'react';
-import { FaBullseye, FaUsers, FaChartLine } from "react-icons/fa";
 
 const benefits = [
   {
-    icon: <FaBullseye className="w-10 h-10 mx-auto" />,
-    title: "Strategic Approach",
-    desc: "We align every campaign with your business goals to deliver impactful outcomes, not just impressions.",
+    image: "/prod/images/ProudlyCanadian.png",
+    title: "Proudly Canadian",
+    desc: "Rooted in Canadian values, we understand the local market and deliver strategies that resonate nationwide.",
   },
   {
-    icon: <FaUsers className="w-10 h-10 mx-auto" />,
-    title: "Dedicated Team",
-    desc: "Work with a passionate team that treats your brand like their own — responsive, reliable, and results-driven.",
+    image: "/prod/images/CustomStrategies.png",
+    title: "Custom Strategies",
+    desc: "Every brand is unique — we craft personalized marketing plans tailored to your specific goals and audience.",
   },
   {
-    icon: <FaChartLine className="w-10 h-10 mx-auto" />,
-    title: "Performance Focused",
-    desc: "We prioritize ROI and performance metrics that matter, so every dollar works harder for your business.",
+    image: "/prod/images/500+Posts_Mont.png",
+    title: "500+ Posts_Mont",
+    desc: "Our team consistently delivers over 500 high-quality posts monthly to keep your brand active and engaging.",
+  },
+  {
+    image: "/prod/images/2xROIonAds.png",
+    title: "2x ROI on Ads",
+    desc: "Achieve double the return on your ad spend with campaigns optimized for performance and real results.",
   },
 ];
-
-
 
 export default function WhyChooseUs() {
   return (
@@ -30,9 +32,9 @@ export default function WhyChooseUs() {
         <div className="relative">
           <div className="bg-dark-orange pt-[70px] md:pt-[90px] px-[42px] md:px-[72px] rounded-[2rem] w-full h-full max-w-[463px] max-h-[646px] flex items-center justify-center mx-auto overflow-hidden">
             <div className="bg-light-orange w-full h-[367px] md:h-[567px] rounded-[0.5rem] relative flex items-center justify-center">
-              <div className="absolute top-1/2 -translate-y-1/2 ">
-                <img src="/icons/laughing.svg" alt="image" className='' />
-              </div>
+              {/* <div className="absolute top-1/2 -translate-y-1/2 "> */}
+                <img src="/prod/images/WhyChooseUsMainImg.png" alt="image" className='h-full w-full rounded-lg' />
+              {/* </div> */}
             </div>
           </div>
 
@@ -60,7 +62,7 @@ export default function WhyChooseUs() {
               <div key={i} className="flex gap-4 md:gap-8 items-start h-fit">
                 <div className=" text-dark-orange text-2xl p-2 min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[100px] flex items-center justify-center relative ">
                   {/* <img src={item.icon} alt="image" className='min-w-[50px] sm:min-w-[70px] md:min-w-[100px] min-h-[70px] md:min-h-[100px] absolute z-10' /> */}
-                  {item.icon}
+                  <img src={item.image} alt="icon" className='h-16 w-16 -mt-2' />
                 </div>
                 <div className='flex flex-col justify-between h-full'>
                   <p className="font-semibold text-xl md:text-2xl text-light-orange">{item.title}</p>

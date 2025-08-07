@@ -78,7 +78,7 @@ const servicesData = [
       "Profile setup & optimization",
       "Analytics tracking & insights",
     ],
-    image: "/images/services/social-media-marketing.avif",
+    image: "/prod/images/SocialMediaManagement.png",
   },
   {
     title: "Paid Ads & Campaigns",
@@ -90,7 +90,7 @@ const servicesData = [
       "A/B testing & optimization",
       "ROI-focused reporting",
     ],
-    image: "/images/services/paid-Ads.jpg",
+    image: "/prod/images/PaidAdsCampaigns.png",
   },
   {
     title: "Content Creation",
@@ -101,7 +101,7 @@ const servicesData = [
       "Branded, scroll-stopping content",
       "Optimized for each platform",
     ],
-    image: "/images/services/content-creation.jpg",
+    image: "/prod/images/ContentCreation.png",
   },
   {
     title: "Strategy & Consulting",
@@ -113,7 +113,7 @@ const servicesData = [
       "Growth & campaign roadmaps",
       "1:1 strategy sessions",
     ],
-    image: "/images/services/people-analyzing.avif",
+    image: "/prod/images/StrategyConsulting.png",
   },
   {
     title: "Community Engagement & Growth",
@@ -124,7 +124,7 @@ const servicesData = [
       "Engagement via DMs, comments, shares",
       "Community retention systems",
     ],
-    image: "/images/services/communities.jpg",
+    image: "/prod/images/CommunityEngagementGrowth.png",
   },
 ];
 
