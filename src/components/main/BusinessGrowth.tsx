@@ -15,7 +15,7 @@ const features = [
 const cards = [
   {
     id: 1,
-    icon: "/prod/images/BoostLocalVisibility.png",
+    icon: "/prod/updated_images/BusinessGrowth/BoostLocalVisibility.png",
     imgcolor: "bg-[#FFECEA]",
     color: "bg-white",
     ctaColor: "text-[#FF1D03]",
@@ -24,7 +24,7 @@ const cards = [
   },
   {
     id: 2,
-    icon: "/prod/images/GenerateQualityLeads.png",
+    icon: "/prod/updated_images/BusinessGrowth/GenerateQualityLeads.png",
     imgcolor: "bg-[#D2FFFB]",
     color: "bg-[#f6fffe]",
     ctaColor: "text-cyan-600",
@@ -33,7 +33,7 @@ const cards = [
   },
   {
     id: 3,
-    icon: "/prod/images/DriveRealEngagement.png",
+    icon: "/prod/updated_images/BusinessGrowth/DriveRealEngagement.png",
     imgcolor: "bg-[#D2FFFB]",
     color: "bg-[#f6fffe]",
     ctaColor: "text-cyan-600",
@@ -42,7 +42,7 @@ const cards = [
   },
   {
     id: 4,
-    icon: "/prod/images/IncreaseConversions.png",
+    icon: "/prod/updated_images/BusinessGrowth/IncreaseConversions.png",
     imgcolor: "bg-[#FFECEA]",
     color: "bg-white",
     ctaColor: "text-red-500",
@@ -110,7 +110,7 @@ export default function BusinessGrowth() {
             } border-none`}
           >
             <div
-              className={`bg-black opacity-75 w-full h-full p-6 flex flex-col max-[500px]:flex-row gap-5 rounded-[31px] ${card.color}  !bg-black !opacity-75`}
+              className={`bg-black opacity-75 w-full h-full p-6 flex flex-col max-[500px]:flex-row gap-5 rounded-[31px] ${card.color}  !bg-black !opacity-75 overflow`}
             >
               {/* Animated Icon Wrapper */}
               <motion.div
@@ -119,7 +119,7 @@ export default function BusinessGrowth() {
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                <img src={card.icon} alt="icon" className="w-12 h-12" />
+                <img src={card.icon} alt="icon" className="w-full h-full rounded-lg" />
               </motion.div>
 
               <div className="w-full space-y-3 sm:space-y-5">

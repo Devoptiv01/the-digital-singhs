@@ -33,11 +33,11 @@ const ServiceCard = ({ icon, title, description, features, image, reverse }: any
           <ArrowRight/>
         </Link>
       </div>
-      <div className=" max-h-[400px] lg:max-w-[400px]">
+      <div className=" max-h-[400px] lg:max-w-[400px] bg-white rounded-xl">
         <motion.img
           src={image}
           alt={title}
-          className="rounded-xl shadow-lg hover:shadow-amber-800 w-full max-w-xl max-h-[400px] hover:scale-105 duration-500"
+          className="rounded-xl shadow-lg bg-white hover:shadow-amber-800 w-full max-w-xl max-h-[400px] hover:scale-105 duration-500"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}

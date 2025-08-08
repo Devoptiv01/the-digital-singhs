@@ -89,7 +89,7 @@ const SocialMediaShowcase = () => {
             className="w-full max-w-[290px] h-[334px] max-h-[334px] aspect-video overflow-hidden rounded-xl bg-transparent shadow-md"
           >
             <video
-              src="/prod/images/Left(1).mp4"
+              src="/prod/updated_images/heroSection/Left.mp4"
               className="w-full h-full object-cover rounded-xl"
               // controls
               muted
@@ -133,7 +133,7 @@ const SocialMediaShowcase = () => {
             className="w-full max-w-[290px] h-[334px] max-h-[334px] aspect-video overflow-hidden rounded-xl bg-transparent shadow-md"
           >
             <video
-              src="/prod/images/Right(1).mp4"
+              src="/prod/updated_images/heroSection/Right.mp4"
               className="w-full h-full object-cover rounded-xl"
               // controls
               muted
